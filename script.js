@@ -192,3 +192,40 @@ function filtrerCategorie(categorie){
     });
 
 }
+// =========================
+// Compte à rebours Promotion
+// =========================
+
+// Date de fin de la promotion
+const dateFin = new Date("December 31, 2026 23:59:59").getTime();
+
+setInterval(function(){
+
+    const maintenant = new Date().getTime();
+
+    const difference = dateFin - maintenant;
+
+    if(difference <= 0){
+
+        document.getElementById("timer").innerHTML =
+        "Promotion terminée";
+
+        return;
+
+    }
+
+    const jours = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+    const heures = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+
+    const secondes = Math.floor((difference % (1000 * 60)) / 1000);
+
+    document.getElementById("timer").innerHTML =
+    jours + " j " +
+    heures + " h " +
+    minutes + " min " +
+    secondes + " s";
+
+},1000);
