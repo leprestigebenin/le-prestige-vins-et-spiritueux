@@ -1,1 +1,204 @@
+/* ==========================
+   LE PRESTIGE - ADMIN MOBILE
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#111;
+
+    color:#fff;
+
+    padding:20px;
+
+}
+
+header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+header h1{
+
+    color:#d4af37;
+
+    font-size:30px;
+
+}
+
+header p{
+
+    color:#ccc;
+
+    margin-top:10px;
+
+}
+
+.container{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.card{
+
+    background:#1d1d1d;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+}
+
+.card h2{
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+textarea{
+
+    min-height:120px;
+
+    resize:vertical;
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#f0c84a;
+
+}
+
+.apercu{
+
+    background:#222;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    margin-top:20px;
+
+}
+
+.apercu img{
+
+    width:100%;
+
+    border-radius:10px;
+
+    margin-bottom:15px;
+
+}
+
+.code{
+
+    background:#000;
+
+    color:#00ff66;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-top:20px;
+
+    white-space:pre-wrap;
+
+    font-family:monospace;
+
+    overflow:auto;
+
+}
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:24px;
+
+}
+
+.card{
+
+padding:15px;
+
+}
+
+button{
+
+font-size:16px;
+
+}
+
+}
