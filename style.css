@@ -199,16 +199,23 @@ h2{
     gap:30px;
 }
 
-.carte{
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+..carte{
+    background:#ffffff;
+    color:#222;
+}
 
-    display:flex;
-    flex-direction:column;
+.carte h3{
+    color:#111;
+}
 
-    height:100%;
+.carte p{
+    color:#444;
+}
+
+.carte .prix{
+    color:#000;
+    font-size:32px;
+    font-weight:bold;
 }
 
 .carte:hover{
@@ -236,20 +243,23 @@ h2{
     margin-bottom:10px;
 }
 
-.carte p{
-
-    color:#ddd;
+.carte{
+    background:#ffffff;
+    color:#222;
 }
 
-.prix{
+.carte h3{
+    color:#111;
+}
 
-    color:#d4af37;
+.carte p{
+    color:#444;
+}
 
-    font-size:26px;
-
+.carte .prix{
+    color:#000;
+    font-size:32px;
     font-weight:bold;
-
-    margin:15px 0;
 }
 
 /* ========================= */
