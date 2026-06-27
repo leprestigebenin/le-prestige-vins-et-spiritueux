@@ -62,3 +62,30 @@ function genererCode() {
 
     document.getElementById("code").textContent = code;
 }
+// Copier le code HTML
+
+function copierCode(){
+
+    const code = document.getElementById("code").textContent;
+
+    if(code.trim()==="" || code==="Le code sera généré ici."){
+
+        alert("Aucun code à copier.");
+
+        return;
+
+    }
+
+    navigator.clipboard.writeText(code)
+    .then(function(){
+
+        alert("✅ Le code HTML a été copié.");
+
+    })
+    .catch(function(){
+
+        alert("Impossible de copier le code.");
+
+    });
+
+}
