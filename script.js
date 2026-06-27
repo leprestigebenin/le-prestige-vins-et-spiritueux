@@ -135,3 +135,60 @@ window.onload = function(){
     afficherPanier();
 
 }
+// Recherche
+
+function rechercherProduit(){
+
+    let filtre = document.getElementById("recherche").value.toUpperCase();
+
+    let produits = document.querySelectorAll(".carte");
+
+    produits.forEach(function(carte){
+
+        let titre = carte.querySelector("h3");
+
+        if(!titre) return;
+
+        if(titre.innerHTML.toUpperCase().indexOf(filtre) > -1){
+
+            carte.style.display="block";
+
+        }else{
+
+            carte.style.display="none";
+
+        }
+
+    });
+
+}
+
+// Catégories
+
+function filtrerCategorie(categorie){
+
+    let produits = document.querySelectorAll(".produits .carte");
+
+    produits.forEach(function(carte){
+
+        if(categorie==="tous"){
+
+            carte.style.display="block";
+
+        }
+
+        else if(carte.classList.contains(categorie)){
+
+            carte.style.display="block";
+
+        }
+
+        else{
+
+            carte.style.display="none";
+
+        }
+
+    });
+
+}
