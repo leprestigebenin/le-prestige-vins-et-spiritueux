@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Administration - Le Prestige Vins & Spiritueux</title>
+
+<link rel="stylesheet" href="admin-mobile.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🔐 Administration</h1>
+
+<p>Le Prestige Vins & Spiritueux</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Ajouter un produit</h2>
+
+<label>📷 Nom de la photo</label>
+
+<input
+type="text"
+id="image"
+placeholder="exemple : whisky-fruite.jpg">
+
+<label>🏷️ Nom du produit</label>
+
+<input
+type="text"
+id="nom"
+placeholder="Nom du produit">
+
+<label>💰 Prix (FCFA)</label>
+
+<input
+type="number"
+id="prix"
+placeholder="20000">
+
+<label>📦 Stock</label>
+
+<input
+type="number"
+id="stock"
+placeholder="10">
+
+<label>🍷 Catégorie</label>
+
+<select id="categorie">
+
+<option value="whisky">🥃 Whisky</option>
+
+<option value="rouge">🍷 Vin rouge</option>
+
+<option value="blanc-sec">🥂 Vin blanc sec</option>
+
+<option value="blanc-moelleux">🍯 Vin blanc moelleux</option>
+
+<option value="rose">🌸 Rosé</option>
+
+<option value="champagne">🍾 Champagne</option>
+
+<option value="sans-alcool">🚫 Sans alcool</option>
+
+<option value="coffret">🎁 Coffret</option>
+
+</select>
+
+<label>📝 Description</label>
+
+<textarea
+id="description"
+placeholder="Description du produit..."></textarea>
+
+<button onclick="genererCode()">
+
+📄 Générer le code HTML
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>👀 Aperçu</h2>
+
+<div id="apercu" class="apercu">
+
+Le produit apparaîtra ici.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📋 Code HTML</h2>
+
+<div id="code" class="code">
+
+Le code sera généré ici.
+
+</div>
+
+</div>
+
+</div>
+
+<script src="admin-mobile.js"></script>
+
+</body>
+
+</html>
