@@ -13,8 +13,15 @@ if (saisie !== motDePasse) {
 
     window.location.href = "index.html";
 
+}const photo = document.getElementById("photo").files[0];
+
+let image = "";
+
+if(photo){
+
+    image = photo.name;
+
 }
-    const image = document.getElementById("image").value;
     const nom = document.getElementById("nom").value;
     const prix = document.getElementById("prix").value;
     const stock = document.getElementById("stock").value;
