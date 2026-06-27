@@ -505,3 +505,23 @@ transform:scale(1.1);
     transform:translateY(-8px);
     border:2px solid #d4af37;
 }
+/* Pourquoi choisir Le Prestige */
+
+#pourquoi{
+    padding:70px 20px;
+    text-align:center;
+}
+
+#pourquoi h2{
+    color:#d4af37;
+    margin-bottom:40px;
+}
+
+#pourquoi .carte{
+    transition:0.3s;
+}
+
+#pourquoi .carte:hover{
+    transform:translateY(-8px);
+    border:2px solid #d4af37;
+}
