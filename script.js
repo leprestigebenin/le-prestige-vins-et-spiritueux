@@ -22,7 +22,7 @@ function afficherPanier() {
 
     const liste = document.getElementById("liste-panier");
     const totalElement = document.getElementById("total");
-
+    const compteur = document.getElementById("nombre-panier");
     if (!liste || !totalElement) return;
 
     liste.innerHTML = "";
@@ -59,7 +59,11 @@ function afficherPanier() {
 
     }
 
-    totalElement.innerHTML = total.toLocaleString();
+    totalElement.innerHTML = total.toLocaleString();if(compteur){
+
+    compteur.innerHTML = panier.length;
+
+}
 
 }
 
