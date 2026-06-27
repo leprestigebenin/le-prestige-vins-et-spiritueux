@@ -607,3 +607,43 @@ background:white;
     background:#f5d76e;
     transform:translateY(-2px);
 }
+/* Alignement des cartes produits */
+
+.carte h3{
+    margin:15px 15px 10px;
+}
+
+.carte p{
+    margin:0 15px 12px;
+}
+
+.carte .prix{
+    font-weight:bold;
+    color:#b8860b;
+    font-size:20px;
+}
+
+/* Les boutons restent toujours en bas */
+.carte button{
+    margin-top:auto;
+}
+
+.carte button,
+.carte .btn-commander{
+
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+
+}
+
+.btn-commander{
+
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+
+}
