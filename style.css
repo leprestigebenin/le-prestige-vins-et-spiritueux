@@ -200,18 +200,15 @@ h2{
 }
 
 .carte{
-
-    background:#1c1c1c;
-
+    background:#fff;
     border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
 
-    padding:20px;
+    display:flex;
+    flex-direction:column;
 
-    text-align:center;
-
-    border:1px solid #333;
-
-    transition:.3s;
+    height:100%;
 }
 
 .carte:hover{
