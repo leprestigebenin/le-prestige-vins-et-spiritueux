@@ -442,3 +442,46 @@ button,
 .categories button:hover{
     background:white;
 }
+/* Bouton Appeler */
+
+.call-float{
+
+position:fixed;
+
+bottom:100px;
+
+right:20px;
+
+width:65px;
+
+height:65px;
+
+background:#007BFF;
+
+color:white;
+
+font-size:30px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-decoration:none;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+z-index:9999;
+
+transition:.3s;
+
+}
+
+.call-float:hover{
+
+transform:scale(1.1);
+
+}
