@@ -59,11 +59,13 @@ function afficherPanier() {
 
     }
 
-    totalElement.innerHTML = total.toLocaleString();if(compteur){
+    totalElement.innerHTML = total.toLocaleString();
+if(compteur){
 
     compteur.innerHTML = panier.length;
 
 }
+
 
 }
 
