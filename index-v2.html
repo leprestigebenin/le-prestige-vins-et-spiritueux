@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Le Prestige Vins & Spiritueux</title>
+
+    <meta name="description"
+        content="Le Prestige Vins & Spiritueux - Vente de vins, champagnes, whiskies et spiritueux au Bénin.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+
+        <img src="logo.png" alt="Le Prestige">
+
+        <div class="logo-text">
+
+            <h1>LE PRESTIGE</h1>
+
+            <p>Vins & Spiritueux</p>
+
+        </div>
+
+    </div>
+
+    <nav id="navbar">
+
+        <a href="#accueil">Accueil</a>
+
+        <a href="#catalogue">Collection</a>
+
+        <a href="#promotions">Promotions</a>
+
+        <a href="#avis">Avis</a>
+
+        <a href="#paiement">Paiement</a>
+
+        <a href="#contact">Contact</a>
+
+        <a href="#panier">
+            🛒 <span id="nombre-panier">0</span>
+        </a>
+
+    </nav>
+
+    <button class="menu-mobile" onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+<section id="accueil" class="hero">
+
+    <div class="hero-content">
+
+        <h2>
+            Le meilleur du vin et des spiritueux
+        </h2>
+
+        <p>
+
+            Découvrez une sélection exceptionnelle de vins, champagnes, whiskies,
+            cognacs et coffrets cadeaux.
+
+        </p>
+
+        <a href="#catalogue" class="btn-principal">
+
+            Découvrir la collection
+
+        </a>
+
+    </div>
+
+</section>
+
+<section class="zone-recherche">
+
+    <div class="recherche-box">
+
+        <input
+            type="text"
+            id="recherche"
+            placeholder="Rechercher un produit...">
+
+        <button onclick="rechercherProduit()">
+
+            🔍
+
+        </button>
+
+    </div>
+
+</section>
+
+<section class="categories">
+
+    <button onclick="filtrerCategorie('tous')">Tous</button>
+
+    <button onclick="filtrerCategorie('rouge')">🍷 Vins rouges</button>
+
+    <button onclick="filtrerCategorie('blanc')">🥂 Blancs</button>
+
+    <button onclick="filtrerCategorie('rose')">🌸 Rosés</button>
+
+    <button onclick="filtrerCategorie('champagne')">🍾 Champagnes</button>
+
+    <button onclick="filtrerCategorie('whisky')">🥃 Whiskies</button>
+
+    <button onclick="filtrerCategorie('coffret')">🎁 Coffrets</button>
+
+</section>
+
+<section id="catalogue">
+
+    <h2>Notre Collection</h2>
+
+    <div id="liste-produits" class="grille-produits">
+    <!-- Produit 1 -->
+
+<div class="carte rouge">
+
+    <span class="badge promo">PROMO</span>
+
+    <img src="ch-pierre-bordeaux-2022.jpg" alt="CH Pierre Bordeaux">
+
+    <div class="contenu-carte">
+
+        <h3>CH Pierre Bordeaux</h3>
+
+        <p>🇫🇷 Vin de Bordeaux</p>
+
+        <p>🍇 Millésime : 2022</p>
+
+        <p>🍷 Vin rouge élégant et fruité.</p>
+
+        <h2 class="prix">4 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('CH Pierre Bordeaux',4500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('CH Pierre Bordeaux',4500)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Produit 2 -->
+
+<div class="carte rouge">
+
+    <img src="louis-eschenauer-bordeaux-2023.jpg" alt="Louis Eschenauer">
+
+    <div class="contenu-carte">
+
+        <h3>Louis Eschenauer Bordeaux</h3>
+
+        <p>🇫🇷 Produit de France</p>
+
+        <p>🍇 Millésime : 2023</p>
+
+        <p>🍷 Élevé en fûts de chêne.</p>
+
+        <h2 class="prix">6 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Louis Eschenauer Bordeaux',6500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Louis Eschenauer Bordeaux',6500)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Produit 3 -->
+
+<div class="carte rouge">
+
+    <span class="badge nouveau">NOUVEAU</span>
+
+    <img src="aetos-private-collection-red-blend-2024.jpg"
+        alt="Aetos">
+
+    <div class="contenu-carte">
+
+        <h3>Aetos Private Collection</h3>
+
+        <p>🇫🇷 Produit de France</p>
+
+        <p>🍇 Merlot • Cabernet • Syrah</p>
+
+        <p>Millésime 2024</p>
+
+        <h2 class="prix">6 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Aetos',6500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Aetos',6500)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Produit 4 -->
+
+<div class="carte rouge">
+
+    <img src="chateau-saint-germain-2021.jpg"
+        alt="Saint Germain">
+
+    <div class="contenu-carte">
+
+        <h3>Château Saint-Germain</h3>
+
+        <p>🇫🇷 Bordeaux Supérieur</p>
+
+        <p>🍇 Millésime : 2021</p>
+
+        <p>Vin rouge raffiné.</p>
+
+        <h2 class="prix">6 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Saint Germain',6500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Saint Germain',6500)">
+            Commander
+        </button>
+
+    </div>
+<!-- Produit 5 -->
+
+<div class="carte rouge">
+
+    <img src="chateau-laussac-2020.jpg" alt="Château Laussac">
+
+    <div class="contenu-carte">
+
+        <h3>Château Laussac</h3>
+
+        <p>🇫🇷 Bordeaux</p>
+
+        <p>🍇 Millésime : 2020</p>
+
+        <p>Vin rouge élégant et équilibré.</p>
+
+        <h2 class="prix">6 000 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Château Laussac',6000)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Château Laussac',6000)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Produit 6 -->
+
+<div class="carte rouge">
+
+    <img src="calvet-selection-des-princes-bordeaux-2022.jpg" alt="Calvet Sélection des Princes">
+
+    <div class="contenu-carte">
+
+        <h3>Calvet Sélection des Princes</h3>
+
+        <p>🇫🇷 Bordeaux</p>
+
+        <p>🍇 Merlot & Cabernet Sauvignon</p>
+
+        <p>Millésime : 2022</p>
+
+        <h2 class="prix">6 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Calvet Sélection des Princes',6500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Calvet Sélection des Princes',6500)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Produit 7 -->
+
+<div class="carte rouge">
+
+    <img src="calvet-varietals-cabernet-sauvignon-2024.jpg" alt="Calvet Cabernet Sauvignon">
+
+    <div class="contenu-carte">
+
+        <h3>Calvet Cabernet Sauvignon</h3>
+
+        <p>🇫🇷 Produit de France</p>
+
+        <p>🍇 Cabernet Sauvignon</p>
+
+        <p>Millésime : 2024</p>
+
+        <h2 class="prix">5 800 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Calvet Cabernet Sauvignon',5800)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Calvet Cabernet Sauvignon',5800)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Produit 8 -->
+
+<div class="carte rouge">
+
+    <span class="badge premium">PREMIUM</span>
+
+    <img src="calvet-reserve-bordeaux-2022-coffret.jpg" alt="Calvet Réserve Coffret">
+
+    <div class="contenu-carte">
+
+        <h3>Calvet Réserve Bordeaux + Coffret</h3>
+
+        <p>🎁 Coffret Prestige</p>
+
+        <p>🍇 Merlot & Cabernet Sauvignon</p>
+
+        <p>Millésime : 2022</p>
+
+        <h2 class="prix">11 000 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Calvet Réserve Coffret',11000)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Calvet Réserve Coffret',11000)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Produit 9 -->
+
+<div class="carte rouge">
+
+    <img src="les-caves-royales-bordeaux-2022.jpg" alt="Les Caves Royales">
+
+    <div class="contenu-carte">
+
+        <h3>Les Caves Royales</h3>
+
+        <p>🇫🇷 Bordeaux</p>
+
+        <p>🍇 Millésime : 2022</p>
+
+        <p>Vin rouge de caractère.</p>
+
+        <h2 class="prix">5 000 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Les Caves Royales',5000)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Les Caves Royales',5000)">
+            Commander
+        </button>
+
+    </div>
+<!-- Produit 10 -->
+
+<div class="carte blanc-sec">
+
+    <img src="clarendelle-bordeaux-blanc-2019.jpg" alt="Clarendelle Bordeaux Blanc">
+
+    <div class="contenu-carte">
+
+        <h3>Clarendelle Bordeaux Blanc</h3>
+
+        <p>🇫🇷 Bordeaux Blanc</p>
+
+        <p>🍇 Millésime : 2019</p>
+
+        <p>Vin blanc sec</p>
+
+        <h2 class="prix">9 000 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Clarendelle Bordeaux Blanc',9000)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Clarendelle Bordeaux Blanc',9000)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Produit 11 -->
+
+<div class="carte blanc-sec">
+
+    <img src="les-caprices-d-antoine-cotes-du-rhone-blanc.jpg"
+         alt="Les Caprices d'Antoine">
+
+    <div class="contenu-carte">
+
+        <h3>Les Caprices d'Antoine</h3>
+
+        <p>🇫🇷 Côtes-du-Rhône Blanc</p>
+
+        <p>🍇 Millésime 2020</p>
+
+        <p>Vin blanc sec</p>
+
+        <h2 class="prix">6 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Les Caprices d Antoine',6500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Les Caprices d Antoine',6500)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Produit 12 -->
+
+<div class="carte blanc-moelleux">
+
+    <span class="badge nouveau">NOUVEAU</span>
+
+    <img src="el-chivo-moelleux.jpg" alt="El Chivo">
+
+    <div class="contenu-carte">
+
+        <h3>El Chivo Medium Sweet</h3>
+
+        <p>🇨🇱 Produit du Chili</p>
+
+        <p>🍇 Vin blanc moelleux</p>
+
+        <p>Millésime : 2022</p>
+
+        <h2 class="prix">13 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('El Chivo',13500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('El Chivo',13500)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Produit 13 -->
+
+<div class="carte blanc-moelleux">
+
+    <img src="jp-chenet-delicious-medium-sweet.jpg"
+         alt="JP Chenet">
+
+    <div class="contenu-carte">
+
+        <h3>JP. Chenet Delicious</h3>
+
+        <p>🇫🇷 Medium Sweet</p>
+
+        <p>🍇 Vin blanc moelleux</p>
+
+        <p>Millésime : 2023</p>
+
+        <h2 class="prix">5 000 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('JP Chenet Delicious',5000)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('JP Chenet Delicious',5000)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Produit 14 -->
+
+<div class="carte blanc-moelleux">
+
+    <img src="ch-valac-cuvee-speciale-moelleux.jpg"
+         alt="CH Valac">
+
+    <div class="contenu-carte">
+
+        <h3>CH Valac Cuvée Spéciale</h3>
+
+        <p>🇪🇸 Produit d'Espagne</p>
+
+        <p>🍇 Vin blanc moelleux</p>
+
+        <p>75 cl</p>
+
+        <h2 class="prix">3 000 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('CH Valac',3000)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('CH Valac',3000)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Produit 15 -->
+
+<div class="carte champagne">
+
+    <span class="badge premium">PREMIUM</span>
+
+    <img src="arthur-metz-cremant-alsace-brut.jpg"
+         alt="Arthur Metz">
+
+    <div class="contenu-carte">
+
+        <h3>Arthur Metz Crémant</h3>
+
+        <p>🇫🇷 Crémant d'Alsace</p>
+
+        <p>🥂 Brut</p>
+
+        <p>Grand Terroir</p>
+
+        <h2 class="prix">26 000 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Arthur Metz',26000)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Arthur Metz',26000)">
+            Commander
+        </button>
+
+    </div>
+<!-- Produit 16 -->
+
+<div class="carte champagne">
+
+    <img src="orelie-vin-petillant.jpg" alt="Orelie Vin Pétillant">
+
+    <div class="contenu-carte">
+
+        <h3>Orelie Vin Pétillant</h3>
+
+        <p>🇫🇷 Produit de France</p>
+
+        <p>🍇 Sauvignon Blanc & Chardonnay</p>
+
+        <p>🥂 12% Vol</p>
+
+        <h2 class="prix">8 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Orelie Vin Pétillant',8500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Orelie Vin Pétillant',8500)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Produit 17 -->
+
+<div class="carte champagne">
+
+    <img src="cote-des-roses-pinot-noir-2023.jpg" alt="Côte des Roses Pinot Noir">
+
+    <div class="contenu-carte">
+
+        <h3>Côte des Roses Pinot Noir</h3>
+
+        <p>🇫🇷 France</p>
+
+        <p>🍇 Pinot Noir</p>
+
+        <p>📅 Millésime 2023</p>
+
+        <h2 class="prix">8 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Côte des Roses Pinot Noir',8500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Côte des Roses Pinot Noir',8500)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Produit 18 -->
+
+<div class="carte champagne">
+
+    <img src="chateau-de-camblane-medoc-2019.jpg" alt="Château de Camblane">
+
+    <div class="contenu-carte">
+
+        <h3>Château de Camblane Médoc</h3>
+
+        <p>🇫🇷 Médoc AOC</p>
+
+        <p>🍷 Millésime 2019</p>
+
+        <p>🍾 75 cl</p>
+
+        <h2 class="prix">8 500 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Château de Camblane Médoc',8500)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Château de Camblane Médoc',8500)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Produit 19 -->
+
+<div class="carte whisky">
+
+    <span class="badge premium">PREMIUM</span>
+
+    <img src="glenmorangie-12-ans-original.jpg" alt="Glenmorangie">
+
+    <div class="contenu-carte">
+
+        <h3>Glenmorangie 12 Ans</h3>
+
+        <p>🏴 Écosse</p>
+
+        <p>🥃 Single Malt</p>
+
+        <p>⏳ Vieilli 12 ans</p>
+
+        <h2 class="prix">35 000 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Glenmorangie 12 Ans',35000)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Glenmorangie 12 Ans',35000)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Produit 20 -->
+
+<div class="carte coffret">
+
+    <span class="badge nouveau">CADEAU</span>
+
+    <img src="calvet-reserve-bordeaux-2022-coffret.jpg" alt="Coffret Calvet">
+
+    <div class="contenu-carte">
+
+        <h3>Coffret Calvet Réserve</h3>
+
+        <p>🎁 Coffret Prestige</p>
+
+        <p>🍷 Bordeaux Réserve</p>
+
+        <p>Idéal pour offrir</p>
+
+        <h2 class="prix">11 000 FCFA</h2>
+
+    </div>
+
+    <div class="actions">
+
+        <button class="btn-panier"
+            onclick="ajouterPanier('Coffret Calvet Réserve',11000)">
+            Ajouter au panier
+        </button>
+
+        <button class="btn-commander"
+            onclick="commanderWhatsApp('Coffret Calvet Réserve',11000)">
+            Commander
+        </button>
+
+    </div>
+
+</div>
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- AVIS CLIENTS -->
+<!-- ========================= -->
+
+<section id="avis" class="avis">
+
+    <h2>⭐ Avis de nos clients</h2>
+
+    <div class="liste-avis">
+
+        <div class="avis-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>
+                « Excellente qualité de vins. Livraison rapide et service impeccable. »
+            </p>
+            <span>— Jean M.</span>
+        </div>
+
+        <div class="avis-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>
+                « Très bon accueil et des produits authentiques. »
+            </p>
+            <span>— Grâce A.</span>
+        </div>
+
+        <div class="avis-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>
+                « Je recommande Le Prestige à tous les amateurs de bons vins. »
+            </p>
+            <span>— David K.</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact" class="contact">
+
+    <h2>📞 Contact</h2>
+
+    <div class="contact-box">
+
+        <p><strong>📍 Adresse :</strong> Cotonou, Bénin</p>
+
+        <p>
+            <strong>📱 Téléphone :</strong>
+
+            <a href="tel:+2290197592841">
+                +229 01 97 59 28 41
+            </a>
+
+        </p>
+
+        <p>
+
+            <strong>💬 WhatsApp :</strong>
+
+            <a href="https://wa.me/2290197592841">
+
+                Discuter sur WhatsApp
+
+            </a>
+
+        </p>
+
+        <p>
+
+            <strong>📧 Email :</strong>
+
+            contact@leprestige.bj
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PAIEMENT -->
+<!-- ========================= -->
+
+<section id="paiement" class="paiement">
+
+    <h2>💳 Moyens de paiement</h2>
+
+    <div class="paiement-box">
+
+        <div class="paiement-card">
+
+            📱 MTN Mobile Money
+
+        </div>
+
+        <div class="paiement-card">
+
+            📱 Moov Money
+
+        </div>
+
+        <div class="paiement-card">
+
+            💵 Paiement à la livraison
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <h3>Le Prestige Vins & Spiritueux</h3>
+
+    <p>
+
+        Vente de vins, champagnes, whiskies et spiritueux.
+
+    </p>
+
+    <p>
+
+        © 2026 Tous droits réservés.
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
