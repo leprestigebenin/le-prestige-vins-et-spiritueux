@@ -191,7 +191,7 @@ h2{
 
 .produits{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:25px;
     max-width:1400px;
     margin:auto;
@@ -200,16 +200,19 @@ h2{
 
 .carte img{
     width:100%;
-    height:250px;
+    height:260px;
     object-fit:cover;
 }
 
 .contenu{
     flex:1;
+    display:flex;
+    flex-direction:column;
     padding:20px;
 }
 
 .actions{
+    margin-top:auto;
     padding:20px;
     display:flex;
     flex-direction:column;
@@ -219,6 +222,12 @@ h2{
 .actions button,
 .actions a{
     width:100%;
+    height:48px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    border-radius:12px;
 }
 /* ========================= */
 /* PANIER */
@@ -363,8 +372,9 @@ button,
 }
 
 .carte img{
-
-    height:220px;
+    width:100%;
+    height:260px;
+    object-fit:cover;
 }
 
 }
@@ -646,10 +656,11 @@ background:white;
     height:100%;
 }
 
-.carte .contenu{
+.contenu{
     flex:1;
     display:flex;
     flex-direction:column;
+    padding:20px;
 }
 
 .carte .prix{
@@ -657,7 +668,12 @@ background:white;
 }
 
 .carte{
+    background:#fff;
+    color:#222;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
     display:flex;
     flex-direction:column;
+    height:100%;
 }
-
