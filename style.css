@@ -657,3 +657,26 @@ background:white;
     border-radius:8px;
 
 }
+
+
+/* --- Fix alignement cartes --- */
+.carte{
+ display:flex;
+ flex-direction:column;
+ min-height:620px;
+}
+.carte p.prix{
+ margin-bottom:12px;
+}
+.carte button{
+ margin-top:auto;
+}
+.carte button,
+.carte .btn-commander{
+ display:block;
+ width:90%;
+ margin-left:auto;
+ margin-right:auto;
+ margin-bottom:10px;
+ text-align:center;
+}
