@@ -1051,3 +1051,35 @@ footer p{
     .carte .prix{
         font-size:26px;
     }
+   /* Alignement parfait des cartes */
+
+.carte{
+    display:flex;
+    flex-direction:column;
+    min-height:620px;
+}
+
+.contenu{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding:15px;
+}
+
+.contenu p:first-of-type{
+    flex:1;
+}
+
+.actions{
+    margin-top:auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    padding:15px;
+}
+
+.actions button,
+.actions .btn-commander{
+    width:100%;
+    text-align:center;
+}
