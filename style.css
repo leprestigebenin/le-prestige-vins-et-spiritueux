@@ -426,71 +426,35 @@ button,
 /* Barre de recherche */
 
 .recherche{
-
-    position:relative;
-
+    display:flex;
+    align-items:center;
+    gap:10px;
     max-width:700px;
-
     margin:35px auto;
-
 }
 
 .recherche input{
-
-    width:100%;
-
-    padding:15px 50px 15px 20px;
-
+    flex:1;
+    padding:15px 20px;
     border:2px solid #D4AF37;
-
     border-radius:40px;
-
     font-size:17px;
-
-    outline:none;
-    padding-right:60px;
 }
 
 #effacerRecherche{
-
-    position:absolute;
-
-    right:18px;
-
-    top:50%;
-
-    transform:translateY(-50%);
-
-    width:30px;
-
-    height:30px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    cursor:pointer;
-
-    color:#777;
-
-    font-size:20px;
-
-    background:white;
-
+    width:48px;
+    height:48px;
+    border:none;
     border-radius:50%;
-
-    z-index:1000;
-
+    background:#6D071A;
+    color:white;
+    cursor:pointer;
+    flex-shrink:0;
 }
 
 #effacerRecherche:hover{
-
-    color:#6D071A;
-
-    background:#f5f5f5;
-
+    background:#D4AF37;
+    color:#111;
 }
 /* Catégories */
 
