@@ -188,8 +188,7 @@ function rechercherProduit(){
                 dejaAjoutes.push(nom);
 
                 suggestions.innerHTML +=
-                "<div onclick=\"choisirProduit('"+nom.replace(/'/g,"\\'")+"')\">🔍 "+nom+"</div>";
-
+              '<div onclick="choisirProduit(\'' + nom + '\')">🔍 ' + nom + '</div>';
             }
 
         }else{
