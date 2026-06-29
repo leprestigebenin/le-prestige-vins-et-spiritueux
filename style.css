@@ -29,9 +29,10 @@ body{
     linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
     url("fond.jpg");
 
-    background-size:cover;
-
-    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #111;
 
     background-repeat:no-repeat;
 
