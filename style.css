@@ -24,25 +24,33 @@ body{
 /* ========================= */
 
 #accueil{
+
     background:
-    linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+    linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),
     url("fond.jpg");
 
     background-size:cover;
+
     background-position:center;
 
-    min-height:100vh;
+    background-repeat:no-repeat;
+
+    height:80vh;
+
+    min-height:600px;
 
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
 
     padding:20px;
 }
-
 .logo{
     width:140px;
     margin:20px 0;
