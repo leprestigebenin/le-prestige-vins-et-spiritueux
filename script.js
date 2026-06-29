@@ -149,6 +149,33 @@ window.onload = function(){
 function rechercherProduit(){
 
     let filtre = document.getElementById("recherche").value.toLowerCase().trim();
+    let suggestions = document.getElementById("suggestions");
+
+suggestions.innerHTML = "";
+
+if(filtre.length > 0){
+
+    produits.forEach(function(carte){
+
+        let nom = carte.querySelector("h3").innerText;
+
+        if(nom.toLowerCase().includes(filtre)){
+
+            suggestions.innerHTML +=
+            "<div onclick='choisirProduit(\""+nom+"\")'>"+nom+"</div>";
+
+        }
+
+    });
+
+    suggestions.style.display =
+        suggestions.innerHTML=="" ? "none" : "block";
+
+}else{
+
+    suggestions.style.display="none";
+
+}
 
     let produits = document.querySelectorAll(".carte");
 
@@ -249,5 +276,14 @@ function viderRecherche(){
     rechercherProduit();
 
     document.getElementById("recherche").focus();
+
+}
+function choisirProduit(nom){
+
+    document.getElementById("recherche").value = nom;
+
+    document.getElementById("suggestions").style.display="none";
+
+    rechercherProduit();
 
 }
