@@ -151,10 +151,12 @@ function rechercherProduit(){
     let filtre = document.getElementById("recherche").value.toLowerCase().trim();
 
     let produits = document.querySelectorAll(".carte");
+let suggestions = document.getElementById("suggestions");
+let nbResultats = document.getElementById("nb-resultats");
 
-    let suggestions = document.getElementById("suggestions");
-
-    let nbResultats = document.getElementById("nb-resultats");
+if(!suggestions || !nbResultats){
+    return;
+}
 
     let compteur = 0;
 
