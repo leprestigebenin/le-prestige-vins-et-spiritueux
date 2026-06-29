@@ -154,8 +154,6 @@ function rechercherProduit(){
 
     let suggestions = document.getElementById("suggestions");
 
-    let boutonEffacer = document.getElementById("effacerRecherche");
-
     let nbResultats = document.getElementById("nb-resultats");
 
     let compteur = 0;
@@ -163,8 +161,6 @@ function rechercherProduit(){
     let dejaAjoutes = [];
 
     suggestions.innerHTML = "";
-
-    boutonEffacer.style.display = filtre ? "block" : "none";
 
     produits.forEach(function(carte){
 
@@ -277,19 +273,7 @@ setInterval(function(){
     secondes + " s";
 
 },1000);
-function viderRecherche(){
 
-    document.getElementById("recherche").value="";
-
-    document.getElementById("effacerRecherche").style.display="none";
-
-    document.getElementById("suggestions").style.display="none";
-
-    rechercherProduit();
-
-    document.getElementById("recherche").focus();
-
-}
 function choisirProduit(nom){
 
     document.getElementById("recherche").value = nom;
