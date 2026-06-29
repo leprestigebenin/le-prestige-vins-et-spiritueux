@@ -242,3 +242,12 @@ setInterval(function(){
     secondes + " s";
 
 },1000);
+function viderRecherche(){
+
+    document.getElementById("recherche").value="";
+
+    rechercherProduit();
+
+    document.getElementById("recherche").focus();
+
+}
