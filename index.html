@@ -61,20 +61,14 @@ Découvrir notre collection
 
 <section id="catalogue">
 <div class="recherche">
+    <input type="text" id="recherche" placeholder="🔍 Rechercher..." onkeyup="rechercherProduit()">
 
-    <input
-        type="text"
-        id="recherche"
-        placeholder="🔍 Rechercher un vin, un whisky ou un champagne..."
-        onkeyup="rechercherProduit()">
-
-    <span id="effacerRecherche" onclick="viderRecherche()">✖</span>
-
-    <div id="suggestions" class="suggestions"></div>
-
+    <button id="effacerRecherche" onclick="viderRecherche()">
+        ✖
+    </button>
 </div>
 
-<p id="nb-resultats"></p>
+<div id="suggestions" class="suggestions"></div>
 
 <div class="categories">
 
