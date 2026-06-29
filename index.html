@@ -120,40 +120,82 @@ Découvrir notre collection
 
 <!-- Carte Promotion 1 -->
 
-<div class="carte">
+<div class="carte rouge">
 
     <img src="vin-syrah.jpg" alt="Domaine de La Baume Syrah">
 
-    <h3>🍷 Domaine de La Baume Syrah</h3>
+    <div class="contenu">
 
-    <p><strong>Ancien prix :</strong> <del>7 500 FCFA</del></p>
+        <h3>🍷 Domaine de La Baume Syrah</h3>
 
-    <p class="prix">6 500 FCFA</p>
+        <p>
+            🇫🇷 Produit de France<br>
+            🍇 Syrah<br>
+            📅 Millésime : 2023<br>
+            🍾 Contenance : 75 cl
+        </p>
 
-    <p>Profitez de cette offre exceptionnelle jusqu'à épuisement des stocks.</p>
+        <p class="prix">
+            <del>6 500 FCFA</del><br>
+            <strong>5 500 FCFA</strong>
+        </p>
 
-    <p class="compte-rebours">
-        ⏳ Offre valable encore :
-        <span id="timer"></span>
-    </p>
+    </div>
+
+    <div class="actions">
+
+        <button onclick="ajouterPanier('Domaine de La Baume Syrah',6500)">
+            Ajouter au panier
+        </button>
+
+        <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Domaine%20de%20La%20Baume%20Syrah."
+           class="btn-commander"
+           target="_blank">
+            Commander
+        </a>
+
+    </div>
 
 </div>
 <!-- Carte Promotion 2 -->
 
-<div class="carte">
+<div class="carte whisky">
 
-    <img src="whisky-fruite.jpg" alt="Whisky Lothaire Fruité">
+    <img src="lothaire-fruite.jpg" alt="Whisky Lothaire Fruité">
 
-    <h3>🥃 Whisky Lothaire Fruité</h3>
+    <div class="contenu">
 
-    <p><strong>Ancien prix :</strong> <del>22 000 FCFA</del></p>
+        <h3>🥃 Whisky Lothaire Fruité</h3>
 
-    <p class="prix">20 000 FCFA</p>
+        <p>
+            🇫🇷 Produit de France<br>
+            🥃 Whisky aux notes fruitées<br>
+            🍾 Contenance : 70 cl<br>
+            🔥 40 % Vol.
+        </p>
 
-    <p>Offre spéciale réservée à nos clients.</p>
+        <p class="prix">
+            <del>20 000 FCFA</del><br>
+            <strong>18 500 FCFA</strong>
+        </p>
+
+    </div>
+
+    <div class="actions">
+
+        <button onclick="ajouterPanier('Whisky Lothaire Fruité',9500)">
+            Ajouter au panier
+        </button>
+
+        <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Whisky%20Lothaire%20Fruité."
+           class="btn-commander"
+           target="_blank">
+            Commander
+        </a>
+
+    </div>
 
 </div>
-
 </section>
 
 <h2>Notre Collection</h2>
@@ -679,7 +721,7 @@ Découvrir notre collection
 
     <div class="actions">
 
-        <button onclick="ajouterPanier('Arthur Metz Crémant d''Alsace Brut',26000)">
+        <button onclick="ajouterPanier('Arthur Metz Crémant d’Alsace Brut',26000)"
             Ajouter au panier
         </button>
 
@@ -695,23 +737,34 @@ Découvrir notre collection
 
     <img src="jp-chenet-divine-pinot-noir-rose.jpg" alt="JP. Chenet Divine Pinot Noir Rosé">
 
-    <h3>JP. Chenet Divine Pinot Noir Rosé</h3>
+    <div class="contenu">
 
-    <p>
-        🇫🇷 Produit de France<br>
-        🌸 Vin rosé demi-sec pétillant<br>
-        🍇 Cépage : Pinot Noir
-    </p>
+        <h3>JP. Chenet Divine Pinot Noir Rosé</h3>
 
-    <p class="prix">8 500 FCFA</p>
+        <p>
+            🇫🇷 Produit de France<br>
+            🌸 Vin rosé demi-sec pétillant<br>
+            🍇 Cépage : Pinot Noir<br>
+            🍾 Contenance : 75 cl
+        </p>
 
-    <button onclick="ajouterPanier('JP. Chenet Divine Pinot Noir Rosé',8500)">
-        Ajouter au panier
-    </button>
+        <p class="prix">8 500 FCFA</p>
 
-    <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20JP.%20Chenet%20Divine%20Pinot%20Noir%20Ros%C3%A9." class="btn-commander">
-        Commander
-    </a>
+    </div>
+
+    <div class="actions">
+
+        <button onclick="ajouterPanier('JP. Chenet Divine Pinot Noir Rosé',8500)">
+            Ajouter au panier
+        </button>
+
+        <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20JP.%20Chenet%20Divine%20Pinot%20Noir%20Ros%C3%A9."
+           class="btn-commander"
+           target="_blank">
+            Commander
+        </a>
+
+    </div>
 
 </div>
 <div class="carte rouge">
@@ -750,23 +803,34 @@ Découvrir notre collection
 
     <img src="coffret-calvet-haut-medoc.jpg" alt="Coffret Calvet Haut-Médoc">
 
-    <h3>Coffret Calvet Haut-Médoc</h3>
+    <div class="contenu">
 
-    <p>
-        🇫🇷 Produit de France<br>
-        🍷 Coffret de 2 bouteilles Calvet Haut-Médoc<br>
-        🍇 Millésime : 2021
-    </p>
+        <h3>Coffret Calvet Haut-Médoc</h3>
 
-    <p class="prix">18 500 FCFA</p>
+        <p>
+            🇫🇷 Produit de France<br>
+            🍷 Coffret de 2 bouteilles Calvet Haut-Médoc<br>
+            📅 Millésime : 2021<br>
+            🎁 Coffret cadeau
+        </p>
 
-    <button onclick="ajouterPanier('Coffret Calvet Haut-Médoc',18500)">
-        Ajouter au panier
-    </button>
+        <p class="prix">18 500 FCFA</p>
 
-    <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Coffret%20Calvet%20Haut-M%C3%A9doc." class="btn-commander">
-        Commander
-    </a>
+    </div>
+
+    <div class="actions">
+
+        <button onclick="ajouterPanier('Coffret Calvet Haut-Médoc',18500)">
+            Ajouter au panier
+        </button>
+
+        <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Coffret%20Calvet%20Haut-M%C3%A9doc."
+           class="btn-commander"
+           target="_blank">
+            Commander
+        </a>
+
+    </div>
 
 </div>
 <div class="carte rose">
@@ -1969,60 +2033,77 @@ avant expédition.
 <!-- ========================= -->
 
 <section id="paiement">
-<h2>Moyens de paiement</h2>
+
+<h2>💳 Moyens de paiement</h2>
 
 <div class="produits">
 
-<div class="carte">
+    <!-- MTN 1 -->
 
-<h3>💛 MTN Mobile Money</h3>
+    <div class="carte">
 
-<p>
+        <h3>💛 MTN Mobile Money</h3>
 
-+229 01 97 59 28 41
-<a href="https://wa.me/2290197592841?text=Bonjour%20Le%20Prestige%20Vins%20et%20Spiritueux,%20j'ai%20déjà%20effectué%20mon%20paiement%20MTN%20Mobile%20Money.%20Je%20vous%20envoie%20la%20preuve%20de%20paiement." class="btn-paiement">
-✅ J'ai déjà effectué mon paiement MTN Mobile Money
-<p style="margin-top:15px;color:#d4af37;font-weight:bold;">
-🔒 Votre commande sera confirmée dès réception de votre preuve de paiement.
-</p>
-</a>
+        <p>
+            <strong>Numéro :</strong><br>
+            +229 01 97 59 28 41
+        </p>
 
-</a>
+        <a href="https://wa.me/2290197592841?text=Bonjour%20Le%20Prestige%20Vins%20et%20Spiritueux,%20je%20viens%20d'effectuer%20mon%20paiement%20via%20MTN%20Mobile%20Money.%20Je%20vous%20transmets%20la%20preuve%20de%20paiement."
+           class="btn-paiement"
+           target="_blank">
 
-</p>
+            ✅ J'ai effectué mon paiement
 
-</div>
+        </a>
 
-<div class="carte">
+        <p style="margin-top:15px;color:#d4af37;font-weight:bold;">
+            🔒 Votre commande sera confirmée après vérification de votre preuve de paiement.
+        </p>
 
-<h3>💙 MTN Mobile Money</h3>
+    </div>
 
-<p>
+    <!-- MTN 2 -->
 
-+229 01 90 50 86 49
-<a href="https://wa.me/2290197592841?text=Bonjour%20Le%20Prestige%20Vins%20et%20Spiritueux,%20j'ai%20déjà%20effectué%20mon%20paiement%20MTN%20Mobile%20Money.%20Je%20vous%20envoie%20la%20preuve%20de%20paiement." class="btn-paiement">
-✅ J'ai déjà effectué mon paiement MTN Mobile Money
-<p style="margin-top:15px;color:#d4af37;font-weight:bold;">
-🔒 Votre commande sera confirmée dès réception de votre preuve de paiement.
-</p>
-</a>
+    <div class="carte">
 
-</p>
+        <h3>💙 MTN Mobile Money</h3>
 
-</div>
+        <p>
+            <strong>Numéro :</strong><br>
+            +229 01 90 50 86 49
+        </p>
 
-<div class="carte">
+        <a href="https://wa.me/2290197592841?text=Bonjour%20Le%20Prestige%20Vins%20et%20Spiritueux,%20je%20viens%20d'effectuer%20mon%20paiement%20via%20MTN%20Mobile%20Money.%20Je%20vous%20transmets%20la%20preuve%20de%20paiement."
+           class="btn-paiement"
+           target="_blank">
 
-<h3>💵 Paiement en espèces</h3>
+            ✅ J'ai effectué mon paiement
 
-<p>
+        </a>
 
-Paiement à la livraison
-ou au retrait.
+        <p style="margin-top:15px;color:#d4af37;font-weight:bold;">
+            🔒 Votre commande sera confirmée après vérification de votre preuve de paiement.
+        </p>
 
-</p>
+    </div>
 
-</div>
+    <!-- Espèces -->
+
+    <div class="carte">
+
+        <h3>💵 Paiement en espèces</h3>
+
+        <p>
+            Le règlement peut être effectué à la livraison
+            ou lors du retrait de votre commande.
+        </p>
+
+        <p style="margin-top:15px;color:#28a745;font-weight:bold;">
+            ✔️ Paiement simple et sécurisé.
+        </p>
+
+    </div>
 
 </div>
 
