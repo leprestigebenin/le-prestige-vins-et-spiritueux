@@ -60,16 +60,20 @@ Découvrir notre collection
 <!-- ========================= -->
 
 <section id="catalogue">
-
 <div class="recherche">
 
     <input
         type="text"
         id="recherche"
-        placeholder="🔍 Rechercher un vin, whisky ou champagne..."
+        placeholder="🔍 Rechercher un vin, un whisky ou un champagne..."
         onkeyup="rechercherProduit()">
 
+    <button id="effacerRecherche" onclick="viderRecherche()">✕</button>
+
 </div>
+
+<p id="nb-resultats"></p>
+
 <div class="categories">
 
 <button onclick="filtrerCategorie('tous')">
