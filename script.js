@@ -148,19 +148,21 @@ window.onload = function(){
 
 function rechercherProduit(){
 
-    let filtre = document.getElementById("recherche").value.toUpperCase();
+    let filtre = document.getElementById("recherche").value.toLowerCase().trim();
 
     let produits = document.querySelectorAll(".carte");
 
+    let compteur = 0;
+
     produits.forEach(function(carte){
 
-        let titre = carte.querySelector("h3");
+        let texte = carte.innerText.toLowerCase();
 
-        if(!titre) return;
+        if(texte.includes(filtre)){
 
-        if(titre.innerHTML.toUpperCase().indexOf(filtre) > -1){
+            carte.style.display="flex";
 
-            carte.style.display="block";
+            compteur++;
 
         }else{
 
@@ -170,6 +172,8 @@ function rechercherProduit(){
 
     });
 
+    document.getElementById("nb-resultats").innerHTML =
+        compteur + " produit(s) trouvé(s)";
 }
 
 // Catégories
