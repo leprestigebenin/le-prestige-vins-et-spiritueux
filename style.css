@@ -151,8 +151,6 @@ button,
     transition:.3s;
 }
 
-/* Bouton principal */
-
 .btn{
 
     background:#D4AF37;
@@ -164,8 +162,6 @@ button,
 
     background:white;
 }
-
-/* Ajouter au panier */
 
 button{
 
@@ -180,8 +176,17 @@ button:hover{
 
     color:#111;
 }
+button:focus,
+.btn:focus,
+.btn-commander:focus,
+.btn-retour:focus,
+.btn-paiement:focus{
 
-/* Commander */
+    outline:3px solid #D4AF37;
+
+    outline-offset:3px;
+
+}
 
 .btn-commander{
 
@@ -255,7 +260,7 @@ section{
 
 .carte:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-8px) scale(1.01);
 
     box-shadow:0 12px 30px rgba(0,0,0,.28);
 
@@ -270,7 +275,8 @@ section{
     object-fit:cover;
 
     display:block;
-
+    
+    user-select:none;
 }
 
 /* ===================================================== */
@@ -1010,11 +1016,13 @@ footer p{
     .whatsapp-float,
 
     .call-float{
+       
+        will-change:transform;
 
         width:55px;
 
         height:55px;
-
+        
     }
 
     .whatsapp-float img{
@@ -1025,3 +1033,10 @@ footer p{
 
     }
 
+::selection{
+
+    background:#D4AF37;
+
+    color:#111;
+
+}
