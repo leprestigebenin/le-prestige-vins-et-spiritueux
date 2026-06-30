@@ -49,8 +49,15 @@ body{
 }
 
 .logo{
-    width:140px;
-    margin-bottom:20px;
+
+    width:120px;
+
+    height:auto;
+
+    position:relative;
+
+    left:-25px;
+
 }
 
 h1{
