@@ -50,13 +50,13 @@ body{
 
 .logo{
 
-    width:120px;
+    width:140px;
 
     height:auto;
 
-    position:relative;
+    margin-bottom:20px;
 
-    left:-25px;
+    transform:translateX(-25px);
 
 }
 
