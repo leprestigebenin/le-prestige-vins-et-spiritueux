@@ -183,6 +183,29 @@ function rechercherProduit(){
 
     }
 
+    function viderRecherche(){
+
+    const recherche = document.getElementById("recherche");
+    const suggestions = document.getElementById("suggestions");
+    const resultat = document.getElementById("nb-resultats");
+
+    recherche.value = "";
+
+    suggestions.innerHTML = "";
+    suggestions.style.display = "none";
+
+    resultat.textContent = "";
+
+    document.querySelectorAll(".produits .carte").forEach(carte=>{
+
+        carte.style.display = "flex";
+
+    });
+
+    recherche.focus();
+
+}
+
     cartes.forEach(carte=>{
 
         const texte = carte.innerText.toLowerCase();
