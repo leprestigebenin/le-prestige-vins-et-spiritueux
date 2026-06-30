@@ -738,15 +738,13 @@ background:white;
 /* Suggestions */
 
 .suggestions{
+    display:none;
     position:absolute;
-    top:100%;
-    left:0;
     width:100%;
     background:white;
     border-radius:12px;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
-    display:none;
-    z-index:1000;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    z-index:999;
 }
 
 .suggestions div{
