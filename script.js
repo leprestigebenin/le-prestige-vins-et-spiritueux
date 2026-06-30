@@ -3,7 +3,7 @@
 // PANIER
 // =====================================================
 
-let panier = [];
+let panier = JSON.parse(localStorage.getItem("panier")) || [];
 let total = 0;
 
 // =====================================================
@@ -77,6 +77,8 @@ function afficherPanier(){
         compteur.textContent = panier.length;
 
     }
+    
+    localStorage.setItem("panier", JSON.stringify(panier));
 
 }
 
@@ -98,10 +100,13 @@ function supprimerProduit(index){
 
 function viderPanier(){
 
-    panier=[];
+    panier = [];
+
+    localStorage.removeItem("panier");
 
     afficherPanier();
 
+}
 }
 
 // =====================================================
