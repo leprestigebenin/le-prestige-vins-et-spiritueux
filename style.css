@@ -1255,3 +1255,24 @@ footer p{
     transform:translateY(0);
 
 }
+
+.quantite-btn{
+    width:32px;
+    height:32px;
+    border:none;
+    border-radius:8px;
+    background:#8B0000;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.quantite{
+    display:inline-block;
+    min-width:30px;
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
+    margin:0 10px;
+}
