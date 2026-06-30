@@ -72,11 +72,15 @@ Découvrir notre collection
 <div class="recherche">
 
     <input
-type="text"
-id="recherche"
-placeholder="🔍 Rechercher..."
-aria-label="Rechercher un produit"
-onkeyup="rechercherProduit()">
+        type="text"
+        id="recherche"
+        placeholder="🔍 Rechercher..."
+        aria-label="Rechercher un produit"
+        onkeyup="rechercherProduit()">
+
+    <span id="effacerRecherche" onclick="viderRecherche()">✖</span>
+
+    <div id="suggestions" class="suggestions"></div>
 
 </div>
 
