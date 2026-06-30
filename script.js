@@ -107,7 +107,6 @@ function viderPanier(){
     afficherPanier();
 
 }
-}
 
 // =====================================================
 // Commander via WhatsApp
@@ -159,6 +158,10 @@ window.open(url, "_blank", "noopener,noreferrer");
 // RECHERCHE + SUGGESTIONS
 // =====================================================
 
+// =====================================================
+// RECHERCHE + SUGGESTIONS
+// =====================================================
+
 function rechercherProduit(){
 
     const recherche = document.getElementById("recherche");
@@ -172,9 +175,8 @@ function rechercherProduit(){
     const cartes = document.querySelectorAll(".produits .carte");
 
     let compteur = 0;
-
     let dejaAjoutes = [];
-    
+
     indexSuggestion = -1;
 
     if(suggestions){
@@ -182,29 +184,6 @@ function rechercherProduit(){
         suggestions.innerHTML = "";
 
     }
-
-    function viderRecherche(){
-
-    const recherche = document.getElementById("recherche");
-    const suggestions = document.getElementById("suggestions");
-    const resultat = document.getElementById("nb-resultats");
-
-    recherche.value = "";
-
-    suggestions.innerHTML = "";
-    suggestions.style.display = "none";
-
-    resultat.textContent = "";
-
-    document.querySelectorAll(".produits .carte").forEach(carte=>{
-
-        carte.style.display = "flex";
-
-    });
-
-    recherche.focus();
-
-}
 
     cartes.forEach(carte=>{
 
@@ -223,17 +202,11 @@ function rechercherProduit(){
             compteur++;
 
             if(
-
                 suggestions &&
-
                 filtre.length > 0 &&
-
                 nom.toLowerCase().includes(filtre) &&
-
                 !dejaAjoutes.includes(nom) &&
-
                 dejaAjoutes.length < 5
-
             ){
 
                 dejaAjoutes.push(nom);
@@ -256,16 +229,59 @@ function rechercherProduit(){
     if(nbResultats){
 
         nbResultats.textContent =
-            compteur + " produit(s) trouvé(s)";
+        compteur + " produit(s) trouvé(s)";
 
     }
 
     if(suggestions){
 
         suggestions.style.display =
-            suggestions.innerHTML ? "block" : "none";
+        suggestions.innerHTML ? "block" : "none";
 
     }
+
+}
+
+
+// =====================================================
+// VIDER LA RECHERCHE
+// =====================================================
+
+function viderRecherche(){
+
+    const recherche = document.getElementById("recherche");
+    const suggestions = document.getElementById("suggestions");
+    const resultat = document.getElementById("nb-resultats");
+
+    if(recherche){
+
+        recherche.value = "";
+
+        recherche.focus();
+
+    }
+
+    if(suggestions){
+
+        suggestions.innerHTML = "";
+
+        suggestions.style.display = "none";
+
+    }
+
+    if(resultat){
+
+        resultat.textContent = "";
+
+    }
+
+    document.querySelectorAll(".produits .carte").forEach(carte=>{
+
+        carte.style.display = "flex";
+
+    });
+
+    indexSuggestion = -1;
 
 }
 
