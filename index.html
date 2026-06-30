@@ -6,17 +6,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Le Prestige Vins et Spiritueux</title>
+<title>
+Le Prestige Vins et Spiritueux | Vente de vins, champagnes et whiskies au Bénin
+</title>
+
+<meta
+name="description"
+content="Découvrez notre sélection de vins, champagnes, whiskies et coffrets cadeaux. Livraison rapide au Bénin.">
+
+<meta
+name="keywords"
+content="vin, champagne, whisky, spiritueux, cave, Bénin, Cotonou, Abomey-Calavi">
+
+<meta
+name="author"
+content="Le Prestige Vins et Spiritueux">
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-
-<!-- ========================= -->
-<!-- ACCUEIL -->
-<!-- ========================= -->
+     
 
 <header id="accueil">
 
@@ -35,9 +46,10 @@
 
 </nav>
 
-<img src="logo.png"
-     alt="Le Prestige"
-     class="logo">
+<img
+src="logo.png"
+alt="Logo Le Prestige Vins et Spiritueux"
+class="logo">
 
 <h1>
 LE PRESTIGE
@@ -55,18 +67,16 @@ Découvrir notre collection
 
 </header>
 
-<!-- ========================= -->
-<!-- CATALOGUE -->
-<!-- ========================= -->
 
 <section id="catalogue">
 <div class="recherche">
 
     <input
-        type="text"
-        id="recherche"
-        placeholder="🔍 Rechercher un vin, un whisky ou un champagne..."
-        onkeyup="rechercherProduit()">
+type="text"
+id="recherche"
+placeholder="🔍 Rechercher..."
+aria-label="Rechercher un produit"
+onkeyup="rechercherProduit()">
 
 </div>
 
@@ -114,10 +124,6 @@ Découvrir notre collection
 
 </div>
 
-<!-- ========================= -->
-<!-- PROMOTIONS -->
-<!-- ========================= -->
-
 <section id="promotions">
 
 <h2>🔥 Promotions du moment</h2>
@@ -128,7 +134,7 @@ Découvrir notre collection
 
 <div class="carte rouge">
 
-    <img src="vin-syrah.jpg" alt="Domaine de La Baume Syrah">
+    <img src="vin-syrah.jpg" alt="Domaine de La Baume Syrah" loading="lazy">
 
     <div class="contenu">
 
@@ -150,13 +156,14 @@ Découvrir notre collection
 
     <div class="actions">
 
-        <button onclick="ajouterPanier('Domaine de La Baume Syrah',6500)">
+        <button onclick="ajouterPanier('Domaine de La Baume Syrah',5500)">
             Ajouter au panier
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Domaine%20de%20La%20Baume%20Syrah."
-           class="btn-commander"
-           target="_blank">
+        class="btn-commander"
+        target="_blank"
+        rel="noopener">
             Commander
         </a>
 
@@ -167,7 +174,7 @@ Découvrir notre collection
 
 <div class="carte whisky">
 
-  <img src="whisky-fruite.jpg" alt="Whisky Lothaire Fruité">
+  <img src="whisky-fruite.jpg" alt="Whisky Lothaire Fruité" loading="lazy">
 
     <div class="contenu">
 
@@ -189,13 +196,14 @@ Découvrir notre collection
 
     <div class="actions">
 
-        <button onclick="ajouterPanier('Whisky Lothaire Fruité',9500)">
+        <button onclick="ajouterPanier('Whisky Lothaire Fruité',18500)">
             Ajouter au panier
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Whisky%20Lothaire%20Fruité."
-           class="btn-commander"
-           target="_blank">
+          class="btn-commander"
+          target="_blank"
+          rel="noopener">
             Commander
         </a>
 
@@ -212,7 +220,7 @@ Découvrir notre collection
 
 <div class="carte whisky">
 
-    <img src="whisky-fruite.jpg" alt="Whisky Lothaire Fruité">
+    <img src="whisky-fruite.jpg" alt="Whisky Lothaire Fruité" loading="lazy">
 
     <div class="contenu">
 
@@ -236,8 +244,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Whisky%20Lothaire%20Fruité."
+           class="btn-commander"
            target="_blank"
-           class="btn-commander">
+           rel="noopener">
             Commander
         </a>
 
@@ -249,7 +258,7 @@ Découvrir notre collection
 
 <div class="carte whisky">
 
-   <img src="whisky-tourbe.jpg" alt="Whisky Lothaire Tourbé">
+   <img src="whisky-tourbe.jpg" alt="Whisky Lothaire Tourbé" loading="lazy">
 
     <div class="contenu">
 
@@ -273,8 +282,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Whisky%20Lothaire%20Tourbé."
+           class="btn-commander"
            target="_blank"
-           class="btn-commander">
+           rel="noopener">
             Commander
         </a>
 
@@ -286,7 +296,7 @@ Découvrir notre collection
 
 <div class="carte rouge">
 
-    <img src="vin-syrah.jpg" alt="Domaine de La Baume Syrah">
+    <img src="vin-syrah.jpg" alt="Domaine de La Baume Syrah" loading="lazy">
 
     <div class="contenu">
 
@@ -310,8 +320,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Domaine%20de%20La%20Baume%20Syrah."
+           class="btn-commander"
            target="_blank"
-           class="btn-commander">
+           rel="noopener">
             Commander
         </a>
 
@@ -323,7 +334,7 @@ Découvrir notre collection
 
 <div class="carte blanc-sec">
 
-    <img src="vin-sauvignon.jpg" alt="Domaine de La Baume Sauvignon Blanc">
+    <img src="vin-sauvignon.jpg" alt="Domaine de La Baume Sauvignon Blanc" loading="lazy">
 
     <div class="contenu">
 
@@ -347,8 +358,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Domaine%20de%20La%20Baume%20Sauvignon%20Blanc."
+           class="btn-commander"
            target="_blank"
-           class="btn-commander">
+           rel="noopener">
             Commander
         </a>
 
@@ -360,7 +372,7 @@ Découvrir notre collection
 
 <div class="carte rouge">
 
-    <img src="merlot.jpg" alt="Merlot Domaine Sainte-Cécile">
+    <img src="merlot.jpg" alt="Merlot Domaine Sainte-Cécile" loading="lazy">
 
     <div class="contenu">
 
@@ -384,8 +396,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Merlot%20Domaine%20Sainte-Cécile."
+           class="btn-commander"
            target="_blank"
-           class="btn-commander">
+           rel="noopener">
             Commander
         </a>
 
@@ -397,7 +410,7 @@ Découvrir notre collection
 
 <div class="carte sans-alcool">
 
-    <img src="sauvterre.jpg" alt="SauvTerre 0.0 %">
+    <img src="sauvterre.jpg" alt="SauvTerre 0.0 %" loading="lazy">
 
     <div class="contenu">
 
@@ -421,8 +434,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20SauvTerre%200.0%25."
+           class="btn-commander"
            target="_blank"
-           class="btn-commander">
+           rel="noopener">
             Commander
         </a>
 
@@ -434,7 +448,7 @@ Découvrir notre collection
 
 <div class="carte blanc-sec">
 
-    <img src="jp-chenet.jpg" alt="JP Chenet Réserve">
+    <img src="jp-chenet.jpg" alt="JP Chenet Réserve" loading="lazy">
 
     <div class="contenu">
 
@@ -458,8 +472,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20JP%20Chenet%20Réserve."
+           class="btn-commander"
            target="_blank"
-           class="btn-commander">
+           rel="noopener">
             Commander
         </a>
 
@@ -471,7 +486,7 @@ Découvrir notre collection
 
 <div class="carte champagne">
 
-    <img src="pierlant.jpg" alt="Pierlant Demi-Sec">
+    <img src="pierlant.jpg" alt="Pierlant Demi-Sec" loading="lazy">
 
     <div class="contenu">
 
@@ -495,8 +510,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Pierlant%20Demi-Sec."
+           class="btn-commander"
            target="_blank"
-           class="btn-commander">
+           rel="noopener">
             Commander
         </a>
 
@@ -508,7 +524,7 @@ Découvrir notre collection
 
 <div class="carte coffret">
 
-    <img src="coffret-bordeaux.jpg" alt="Coffret Dégustation Bordeaux">
+    <img src="coffret-bordeaux.jpg" alt="Coffret Dégustation Bordeaux" loading="lazy">
 
     <div class="contenu">
 
@@ -531,8 +547,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Coffret%20Dégustation%20Bordeaux."
+           class="btn-commander"
            target="_blank"
-           class="btn-commander">
+           rel="noopener">
             Commander
         </a>
 
@@ -544,7 +561,7 @@ Découvrir notre collection
 
 <div class="carte coffret">
 
-    <img src="coffret-elchivo.jpg" alt="Coffret El Chivo">
+    <img src="coffret-elchivo.jpg" alt="Coffret El Chivo" loading="lazy">
 
     <div class="contenu">
 
@@ -568,8 +585,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Coffret%20El%20Chivo."
-           class="btn-commander"
-           target="_blank">
+          class="btn-commander"
+          target="_blank"
+          rel="noopener">
             Commander
         </a>
 
@@ -577,7 +595,7 @@ Découvrir notre collection
 </div>
 <div class="carte champagne">
 
-    <img src="orelie-petillant.jpg" alt="Orélie Vin Pétillant">
+    <img src="orelie-petillant.jpg" alt="Orélie Vin Pétillant" loading="lazy">
 
     <div class="contenu">
 
@@ -601,7 +619,8 @@ Découvrir notre collection
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Orélie%20Vin%20Pétillant."
            class="btn-commander"
-           target="_blank">
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -611,7 +630,7 @@ Découvrir notre collection
 
 <div class="carte coffret">
 
-    <img src="coffret-nicolas-feuillatte.jpg" alt="Coffret Nicolas Feuillatte">
+    <img src="coffret-nicolas-feuillatte.jpg" alt="Coffret Nicolas Feuillatte" loading="lazy">
 
     <div class="contenu">
 
@@ -635,8 +654,9 @@ Découvrir notre collection
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Coffret%20Nicolas%20Feuillatte."
            class="btn-commander"
-           target="_blank">
-            Commander
+           target="_blank"
+           rel="noopener">
+           Commander
         </a>
 
     </div>
@@ -644,7 +664,7 @@ Découvrir notre collection
 </div>
 <div class="carte blanc-moelleux">
 
-    <img src="el-chivo-moelleux.jpg" alt="El Chivo Moelleux">
+    <img src="el-chivo-moelleux.jpg" alt="El Chivo Moelleux" loading="lazy">
 
     <div class="contenu">
 
@@ -668,8 +688,10 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20El%20Chivo%20Moelleux."
-        class="btn-commander" target="_blank">
-            Commander
+        class="btn-commander"
+        target="_blank"
+        rel="noopener">    
+          Commander
         </a>
 
     </div>
@@ -677,7 +699,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="mouton-cadet-bordeaux-rouge.jpg" alt="Mouton Cadet Bordeaux Rouge">
+    <img src="mouton-cadet-bordeaux-rouge.jpg" alt="Mouton Cadet Bordeaux Rouge" loading="lazy">
 
     <div class="contenu">
 
@@ -700,8 +722,10 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Mouton%20Cadet%20Bordeaux%20Rouge."
-        class="btn-commander" target="_blank">
-            Commander
+        class="btn-commander"
+        target="_blank"
+        rel="noopener">   
+          Commander
         </a>
 
     </div>
@@ -709,7 +733,7 @@ Découvrir notre collection
 </div>
 <div class="carte champagne">
 
-    <img src="arthur-metz-cremant-alsace-brut.jpg" alt="Arthur Metz Crémant d'Alsace Brut">
+    <img src="arthur-metz-cremant-alsace-brut.jpg" alt="Arthur Metz Crémant d'Alsace Brut" loading="lazy">
 
     <div class="contenu">
 
@@ -734,7 +758,8 @@ Découvrir notre collection
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Arthur%20Metz%20Crémant%20d’Alsace%20Brut."
            class="btn-commander"
-           target="_blank">
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -744,7 +769,7 @@ Découvrir notre collection
 
 <div class="carte rose">
 
-    <img src="jp-chenet-divine-pinot-noir-rose.jpg" alt="JP. Chenet Divine Pinot Noir Rosé">
+    <img src="jp-chenet-divine-pinot-noir-rose.jpg" alt="JP. Chenet Divine Pinot Noir Rosé" loading="lazy">
 
     <div class="contenu">
 
@@ -769,7 +794,8 @@ Découvrir notre collection
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20JP.%20Chenet%20Divine%20Pinot%20Noir%20Ros%C3%A9."
            class="btn-commander"
-           target="_blank">
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -778,7 +804,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="gato-negro-cabernet-sauvignon.jpg" alt="Gato Negro Cabernet Sauvignon">
+    <img src="gato-negro-cabernet-sauvignon.jpg" alt="Gato Negro Cabernet Sauvignon" loading="lazy">
 
     <div class="contenu">
 
@@ -801,7 +827,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Gato%20Negro%20Cabernet%20Sauvignon."
-        class="btn-commander" target="_blank">
+        class="btn-commander"
+        target="_blank"
+        rel="noopener">
             Commander
         </a>
 
@@ -810,7 +838,7 @@ Découvrir notre collection
 </div>
 <div class="carte coffret">
 
-    <img src="coffret-calvet-haut-medoc.jpg" alt="Coffret Calvet Haut-Médoc">
+    <img src="coffret-calvet-haut-medoc.jpg" alt="Coffret Calvet Haut-Médoc" loading="lazy">
 
     <div class="contenu">
 
@@ -835,7 +863,8 @@ Découvrir notre collection
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Coffret%20Calvet%20Haut-M%C3%A9doc."
            class="btn-commander"
-           target="_blank">
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -844,7 +873,7 @@ Découvrir notre collection
 </div>
 <div class="carte rose">
 
-    <img src="louis-eschenauer-cinsault-rose.jpg" alt="Louis Eschenauer Cinsault Rosé">
+    <img src="louis-eschenauer-cinsault-rose.jpg" alt="Louis Eschenauer Cinsault Rosé" loading="lazy">
 
     <div class="contenu">
 
@@ -868,7 +897,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Louis%20Eschenauer%20Cinsault%20Rosé."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -877,7 +908,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="plan-de-dieu-la-begude.jpg" alt="Plan de Dieu La Bégude">
+    <img src="plan-de-dieu-la-begude.jpg" alt="Plan de Dieu La Bégude" loading="lazy">
 
     <div class="contenu">
 
@@ -900,7 +931,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Plan%20de%20Dieu%20La%20Bégude."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -909,7 +942,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="chemin-des-papes-cotes-du-rhone.jpg" alt="Chemin des Papes Côtes-du-Rhône">
+    <img src="chemin-des-papes-cotes-du-rhone.jpg" alt="Chemin des Papes Côtes-du-Rhône" loading="lazy">
 
     <div class="contenu">
 
@@ -933,7 +966,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Chemin%20des%20Papes%20Côtes-du-Rhône."
-           class="btn-commander">
+           class="btn-commander"
+          target="_blank"
+          rel="noopener">
             Commander
         </a>
 
@@ -942,7 +977,7 @@ Découvrir notre collection
 </div>
 <div class="carte blanc-moelleux">
 
-    <img src="jp-chenet-delicious-medium-sweet.jpg" alt="JP. Chenet Delicious Medium Sweet">
+    <img src="jp-chenet-delicious-medium-sweet.jpg" alt="JP. Chenet Delicious Medium Sweet" loading="lazy">
 
     <div class="contenu">
 
@@ -965,7 +1000,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20JP.%20Chenet%20Delicious%20Medium%20Sweet."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -974,7 +1011,7 @@ Découvrir notre collection
 </div>
 <div class="carte rose">
 
-    <img src="marius-peyol-cotes-de-provence-rose.jpg" alt="Marius Peyol Côtes de Provence Rosé">
+    <img src="marius-peyol-cotes-de-provence-rose.jpg" alt="Marius Peyol Côtes de Provence Rosé" loading="lazy">
 
     <div class="contenu">
 
@@ -997,7 +1034,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Marius%20Peyol%20Côtes%20de%20Provence%20Rosé."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1006,7 +1045,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="etoile-de-gascogne-cotes-de-gascogne-rouge.jpg" alt="Étoile de Gascogne">
+    <img src="etoile-de-gascogne-cotes-de-gascogne-rouge.jpg" alt="Étoile de Gascogne" loading="lazy">
 
     <div class="contenu">
 
@@ -1029,7 +1068,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Étoile%20de%20Gascogne."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1038,7 +1079,7 @@ Découvrir notre collection
 </div>
 <div class="carte blanc-moelleux">
 
-    <img src="domaine-majeste-blanc-et-rouge.jpg" alt="Domaine Majesté Blanc Moelleux">
+    <img src="domaine-majeste-blanc-et-rouge.jpg" alt="Domaine Majesté Blanc Moelleux" loading="lazy">
 
     <div class="contenu">
 
@@ -1061,7 +1102,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Domaine%20Majesté%20Blanc%20Moelleux."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1070,7 +1113,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="domaine-majeste-blanc-et-rouge.jpg" alt="Domaine Majesté Vin Rouge">
+    <img src="domaine-majeste-blanc-et-rouge.jpg" alt="Domaine Majesté Vin Rouge" loading="lazy">
 
     <div class="contenu">
 
@@ -1094,7 +1137,8 @@ Découvrir notre collection
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Domaine%20Majesté%20Vin%20Rouge."
            class="btn-commander"
-           target="_blank">
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1103,7 +1147,7 @@ Découvrir notre collection
 </div>
 <div class="carte coffret">
 
-    <img src="coffret-jp-chenet-blanc-de-blancs.jpg" alt="Coffret JP. Chenet Blanc de Blancs">
+    <img src="coffret-jp-chenet-blanc-de-blancs.jpg" alt="Coffret JP. Chenet Blanc de Blancs" loading="lazy">
 
     <div class="contenu">
 
@@ -1126,7 +1170,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Coffret%20JP.%20Chenet%20Blanc%20de%20Blancs."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1135,7 +1181,7 @@ Découvrir notre collection
 </div>
 <div class="carte blanc-sec">
 
-    <img src="clarendelle-bordeaux-blanc-2019.jpg" alt="Clarendelle Bordeaux Blanc 2019">
+    <img src="clarendelle-bordeaux-blanc-2019.jpg" alt="Clarendelle Bordeaux Blanc 2019" loading="lazy">
 
     <div class="contenu">
 
@@ -1158,7 +1204,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Clarendelle%20Bordeaux%20Blanc%202019."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1167,7 +1215,7 @@ Découvrir notre collection
 </div>
 <div class="carte whisky">
 
-    <img src="coffret-jameson-irish-whiskey.jpg" alt="Coffret Jameson Irish Whiskey">
+    <img src="coffret-jameson-irish-whiskey.jpg" alt="Coffret Jameson Irish Whiskey" loading="lazy">
 
     <div class="contenu">
 
@@ -1190,7 +1238,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Coffret%20Jameson%20Irish%20Whiskey."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1199,7 +1249,7 @@ Découvrir notre collection
 </div>
 <div class="carte blanc-moelleux">
 
-    <img src="ch-valac-cuvee-speciale-moelleux.jpg" alt="CH Valac Cuvée Spéciale Moelleux">
+    <img src="ch-valac-cuvee-speciale-moelleux.jpg" alt="CH Valac Cuvée Spéciale Moelleux" loading="lazy">
 
     <div class="contenu">
 
@@ -1222,7 +1272,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20CH%20Valac%20Cuvée%20Spéciale%20Moelleux."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1231,7 +1283,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="les-caprices-d-antoine-cotes-du-rhone-blanc.jpg" alt="Les Caprices d'Antoine">
+    <img src="les-caprices-d-antoine-cotes-du-rhone-blanc.jpg" alt="Les Caprices d'Antoine" loading="lazy">
 
     <div class="contenu">
 
@@ -1256,7 +1308,8 @@ Découvrir notre collection
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Les%20Caprices%20d%E2%80%99Antoine."
            class="btn-commander"
-           target="_blank">
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1265,7 +1318,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="cote-des-roses-pinot-noir-2023.jpg" alt="Côte des Roses Pinot Noir">
+    <img src="cote-des-roses-pinot-noir-2023.jpg" alt="Côte des Roses Pinot Noir" loading="lazy">
 
     <div class="contenu">
 
@@ -1288,7 +1341,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Côte%20des%20Roses%20Pinot%20Noir."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1297,7 +1352,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="ogier-ventoux-les-berceaux-2024.jpg" alt="Ogier Ventoux Les Berceaux">
+    <img src="ogier-ventoux-les-berceaux-2024.jpg" alt="Ogier Ventoux Les Berceaux" loading="lazy">
 
     <div class="contenu">
 
@@ -1321,7 +1376,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Ogier%20Ventoux%20Les%20Berceaux."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1330,7 +1387,7 @@ Découvrir notre collection
 </div>
 <div class="carte whisky">
 
-    <img src="glenmorangie-12-ans-original.jpg" alt="Glenmorangie The Original 12 Ans">
+    <img src="glenmorangie-12-ans-original.jpg" alt="Glenmorangie The Original 12 Ans" loading="lazy">
 
     <div class="contenu">
 
@@ -1353,7 +1410,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Glenmorangie%20The%20Original%2012%20Ans."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1362,7 +1421,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="nuit-des-anges-cru-classe-2023.jpg" alt="Nuit des Anges Cru Classé">
+    <img src="nuit-des-anges-cru-classe-2023.jpg" alt="Nuit des Anges Cru Classé" loading="lazy">
 
     <div class="contenu">
 
@@ -1385,7 +1444,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Nuit%20des%20Anges%20Cru%20Classé."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1394,7 +1455,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="baron-duprat-bordeaux-2020.jpg" alt="Baron Duprat Bordeaux">
+    <img src="baron-duprat-bordeaux-2020.jpg" alt="Baron Duprat Bordeaux" loading="lazy">
 
     <div class="contenu">
 
@@ -1418,7 +1479,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Baron%20Duprat%20Bordeaux."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1427,7 +1490,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="chateau-de-camblane-medoc-2019.jpg" alt="Château de Camblane Médoc 2019">
+    <img src="chateau-de-camblane-medoc-2019.jpg" alt="Château de Camblane Médoc 2019" loading="lazy">
 
     <div class="contenu">
 
@@ -1452,7 +1515,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Château%20de%20Camblane%20Médoc%202019."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1461,7 +1526,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="ch-pierre-bordeaux-2022.jpg" alt="CH Pierre Bordeaux 2022">
+    <img src="ch-pierre-bordeaux-2022.jpg" alt="CH Pierre Bordeaux 2022" loading="lazy">
 
     <div class="contenu">
 
@@ -1485,7 +1550,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20CH%20Pierre%20Bordeaux%202022."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1494,7 +1561,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="louis-eschenauer-bordeaux-2023.jpg" alt="Louis Eschenauer Bordeaux 2023">
+    <img src="louis-eschenauer-bordeaux-2023.jpg" alt="Louis Eschenauer Bordeaux 2023" loading="lazy">
 
     <div class="contenu">
 
@@ -1518,7 +1585,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Louis%20Eschenauer%20Bordeaux%202023."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1527,7 +1596,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="aetos-private-collection-red-blend-2024.jpg" alt="AETOS Private Collection Red Blend 2024">
+    <img src="aetos-private-collection-red-blend-2024.jpg" alt="AETOS Private Collection Red Blend 2024" loading="lazy">
 
     <div class="contenu">
 
@@ -1551,7 +1620,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20AETOS%20Private%20Collection%20Red%20Blend%202024."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1560,7 +1631,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="chateau-saint-germain-bordeaux-superieur-2021.jpg" alt="Château Saint-Germain Bordeaux Supérieur 2021">
+    <img src="chateau-saint-germain-bordeaux-superieur-2021.jpg" alt="Château Saint-Germain Bordeaux Supérieur 2021" loading="lazy">
 
     <div class="contenu">
 
@@ -1584,7 +1655,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Château%20Saint-Germain%20Bordeaux%20Supérieur%202021."
-           class="btn-commander">
+           class="btn-commander"
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1593,7 +1666,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="chateau-laussac-bordeaux-2020.jpg" alt="Château Laussac Bordeaux 2020">
+    <img src="chateau-laussac-bordeaux-2020.jpg" alt="Château Laussac Bordeaux 2020" loading="lazy">
 
     <div class="contenu">
 
@@ -1619,7 +1692,8 @@ Découvrir notre collection
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20le%20Château%20Laussac%20Bordeaux%202020."
            class="btn-commander"
-           target="_blank">
+           target="_blank"
+           rel="noopener">
             Commander
         </a>
 
@@ -1628,7 +1702,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="calvet-selection-des-princes-bordeaux-2022.jpg" alt="Calvet Sélection des Princes Bordeaux 2022">
+    <img src="calvet-selection-des-princes-bordeaux-2022.jpg" alt="Calvet Sélection des Princes Bordeaux 2022" loading="lazy">
 
     <div class="contenu">
 
@@ -1651,7 +1725,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Calvet%20Sélection%20des%20Princes."
-        class="btn-commander" target="_blank">
+        class="btn-commander"
+        target="_blank"
+        rel="noopener">
             Commander
         </a>
 
@@ -1660,7 +1736,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="calvet-varietals-cabernet-sauvignon-2024.jpg" alt="Calvet Varietals Cabernet Sauvignon">
+    <img src="calvet-varietals-cabernet-sauvignon-2024.jpg" alt="Calvet Varietals Cabernet Sauvignon" loading="lazy">
 
     <div class="contenu">
 
@@ -1683,7 +1759,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Calvet%20Varietals."
-        class="btn-commander" target="_blank">
+         class="btn-commander"
+         target="_blank"
+         rel="noopener">
             Commander
         </a>
 
@@ -1692,7 +1770,7 @@ Découvrir notre collection
 </div>
 <div class="carte coffret">
 
-    <img src="calvet-reserve-bordeaux-2022-coffret.jpg" alt="Calvet Réserve Bordeaux 2022">
+    <img src="calvet-reserve-bordeaux-2022-coffret.jpg" alt="Calvet Réserve Bordeaux 2022" loading="lazy">
 
     <div class="contenu">
 
@@ -1715,7 +1793,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Calvet%20Réserve."
-        class="btn-commander" target="_blank">
+        class="btn-commander"
+        target="_blank"
+        rel="noopener">
             Commander
         </a>
 
@@ -1724,7 +1804,7 @@ Découvrir notre collection
 </div>
 <div class="carte rouge">
 
-    <img src="les-caves-royales-bordeaux-2022.jpg" alt="Les Caves Royales Bordeaux 2022">
+    <img src="les-caves-royales-bordeaux-2022.jpg" alt="Les Caves Royales Bordeaux 2022" loading="lazy">
 
     <div class="contenu">
 
@@ -1747,7 +1827,9 @@ Découvrir notre collection
         </button>
 
         <a href="https://wa.me/2290197592841?text=Bonjour,%20je%20souhaite%20commander%20Les%20Caves%20Royales%20Bordeaux%202022."
-        class="btn-commander" target="_blank">
+        class="btn-commander"
+        target="_blank"
+        rel="noopener">
             Commander
         </a>
 
@@ -1756,9 +1838,6 @@ Découvrir notre collection
 </div>
 
 </section>
-<!-- ========================= -->
-<!-- PANIER -->
-<!-- ========================= -->
 
 <section id="panier">
 
@@ -1781,10 +1860,6 @@ Commander sur WhatsApp
 </div>
 
 </section>
-
-<!-- ========================= -->
-<!-- A PROPOS -->
-<!-- ========================= -->
 
 <section id="apropos">
 
@@ -1870,13 +1945,10 @@ Nous sélectionnons avec soin des vins, champagnes et spiritueux de qualité afi
 </div>
 
 </section>
-</p>
-
-</section>
 <section id="pourquoi">
 
-<h2>⭐ Pourquoi choisir Le Prestige Vins & Spiritueux ?</h2>
-
+<h2>⭐ Pourquoi choisir Le Prestige Vins et Spiritueux ?</h2>
+ 
 <div class="produits">
 
 <div class="carte">
@@ -1922,13 +1994,7 @@ Votre satisfaction est notre priorité. Nous mettons tout en œuvre pour vous of
 </div>
 
 </div>
-
-</section>
-</section>
-
-<!-- ========================= -->
-<!-- AVIS CLIENTS -->
-<!-- ========================= -->
+ </section>
 
 <section id="temoignages">
 
@@ -1982,12 +2048,7 @@ je recommande vivement Le Prestige. »
 </div>
 
 </div>
-
-</section>
-
-<!-- ========================= -->
-<!-- LIVRAISON -->
-<!-- ========================= -->
+ </section>
 
 <section id="livraison">
 
@@ -2035,13 +2096,8 @@ avant expédition.
 
 </div>
 
-</div>
-
+</div> 
 </section>
-
-<!-- ========================= -->
-<!-- MOYENS DE PAIEMENT -->
-<!-- ========================= -->
 
 <section id="paiement">
 
@@ -2062,8 +2118,9 @@ avant expédition.
 
         <a href="https://wa.me/2290197592841?text=Bonjour%20Le%20Prestige%20Vins%20et%20Spiritueux,%20je%20viens%20d'effectuer%20mon%20paiement%20via%20MTN%20Mobile%20Money.%20Je%20vous%20transmets%20la%20preuve%20de%20paiement."
            class="btn-paiement"
-           target="_blank">
-
+           target="_blank"
+           rel="noopener">
+  
             ✅ J'ai effectué mon paiement
 
         </a>
@@ -2087,7 +2144,8 @@ avant expédition.
 
         <a href="https://wa.me/2290197592841?text=Bonjour%20Le%20Prestige%20Vins%20et%20Spiritueux,%20je%20viens%20d'effectuer%20mon%20paiement%20via%20MTN%20Mobile%20Money.%20Je%20vous%20transmets%20la%20preuve%20de%20paiement."
            class="btn-paiement"
-           target="_blank">
+           target="_blank"
+           rel="noopener">
 
             ✅ J'ai effectué mon paiement
 
@@ -2117,12 +2175,7 @@ avant expédition.
     </div>
 
 </div>
-
 </section>
-
-<!-- ========================= -->
-<!-- CONTACT -->
-<!-- ========================= -->
 
 <section id="contact">
 
@@ -2156,7 +2209,8 @@ class="call-float">
 
 <a href="https://wa.me/2290197592841"
 class="whatsapp-float"
-target="_blank">
+target="_blank"
+rel="noopener">
 
 <img
 src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
