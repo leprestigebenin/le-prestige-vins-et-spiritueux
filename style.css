@@ -370,11 +370,14 @@ section{
 
     margin:35px auto;
 
+    margin-top:50px;
+
 }
 
 .recherche input{
 
-    width:100%;
+    width: 80%;
+    max-width: 900px;
 
     padding:15px 20px;
 
@@ -423,8 +426,8 @@ section{
 
     overflow:hidden;
 
-    box-shadow:0 10px 20px rgba(0,0,0,.18);
-
+    box-shadow:0 8px 25px rgba(0,0,0,.45);
+    
     display:none;
 
     z-index:999;
@@ -519,6 +522,10 @@ section{
     background:#6D071A;
 
     color:white;
+
+    transform:translateY(-3px);
+
+    transition:.3s;
 
 }
 
