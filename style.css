@@ -432,11 +432,11 @@ section{
 .recherche input{
 
     width:100%;
-    
+
     box-sizing:border-box;
-    
+
     padding:15px 55px 15px 20px;
-    
+
     border:2px solid #D4AF37;
 
     border-radius:40px;
@@ -444,8 +444,6 @@ section{
     outline:none;
 
     font-size:17px;
-
-    transition:.3s;
 
 }
 .recherche input:hover{
