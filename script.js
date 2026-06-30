@@ -19,8 +19,9 @@ function ajouterPanier(nom, prix){
 
     afficherPanier();
 
-}
+    afficherNotification(nom + " ajouté au panier");
 
+}
 // =====================================================
 // Afficher le panier
 // =====================================================
@@ -153,10 +154,6 @@ const url =
 
 window.open(url, "_blank", "noopener,noreferrer");
 }
-
-// =====================================================
-// RECHERCHE + SUGGESTIONS
-// =====================================================
 
 // =====================================================
 // RECHERCHE + SUGGESTIONS
@@ -453,9 +450,28 @@ function majSuggestion(items){
 
     }
 
+// =====================================================
+// NOTIFICATION PANIER
+// =====================================================
+
+function afficherNotification(message){
+
+    const notification =
+        document.getElementById("notification-panier");
+
+    if(!notification) return;
+
+    notification.textContent = "✅ " + message;
+
+    notification.classList.add("active");
+
+    setTimeout(function(){
+
+        notification.classList.remove("active");
+
+    },2000);
+
 }
-
-
 
 // =====================================================
 // INITIALISATION
