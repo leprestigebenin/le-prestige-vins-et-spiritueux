@@ -625,3 +625,22 @@ document.querySelectorAll("#menu a").forEach(link => {
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("menu").classList.remove("active");
 });
+
+function retourHaut(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+}
+
+window.addEventListener("scroll",function(){
+
+    const bouton=document.getElementById("retour-haut");
+
+    if(window.scrollY>500){
+        bouton.style.display="flex";
+    }else{
+        bouton.style.display="none";
+    }
+
+});
