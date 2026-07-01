@@ -74,9 +74,21 @@ function afficherPanier(){
         <div class="ligne-panier">
 
             <div class="infos-panier">
-                <strong>${produit.nom}</strong><br>
-                ${produit.prix.toLocaleString()} FCFA
-            </div>
+
+    <img
+        src="${produit.image}"
+        class="photo-panier"
+        alt="${produit.nom}">
+
+    <div>
+
+        <strong>${produit.nom}</strong><br>
+
+        ${produit.prix.toLocaleString()} FCFA
+
+    </div>
+
+</div>
 
             <div class="quantite-zone">
 
