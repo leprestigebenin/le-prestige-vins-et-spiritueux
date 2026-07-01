@@ -1449,3 +1449,93 @@ footer p{
 .avis-card h3{
     margin-bottom:10px;
 }
+
+/* ========================================= */
+/* VERSION MOBILE */
+/* ========================================= */
+
+@media screen and (max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+    padding:15px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.produits{
+    grid-template-columns:1fr;
+}
+
+.carte{
+    width:100%;
+}
+
+.carte img{
+    height:220px;
+    object-fit:cover;
+}
+
+.actions{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.actions button,
+.actions .btn-commander{
+    width:100%;
+}
+
+.panier{
+    width:95%;
+    margin:auto;
+}
+
+.ligne-panier{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.quantite-zone{
+    width:100%;
+    justify-content:center;
+}
+
+.btn-supprimer{
+    width:100%;
+}
+
+footer{
+    padding:30px 20px;
+    text-align:center;
+}
+
+.avis-card{
+    margin-bottom:20px;
+}
+
+.formulaire-avis input,
+.formulaire-avis textarea{
+    font-size:16px;
+}
+
+.btn-avis{
+    width:100%;
+}
+
+}
