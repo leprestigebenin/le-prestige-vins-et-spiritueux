@@ -10,7 +10,7 @@ let total = 0;
 // Ajouter un produit
 // =====================================================
 
-function ajouterPanier(nom, prix){
+function ajouterPanier(nom, prix, image){
 
     const existe = panier.find(produit => produit.nom === nom);
 
@@ -20,11 +20,12 @@ function ajouterPanier(nom, prix){
 
     }else{
 
-        panier.push({
-            nom: nom,
-            prix: prix,
-            quantite: 1
-        });
+ panier.push({
+    nom,
+    prix,
+    image,
+    quantite: 1
+ });
 
     }
 
