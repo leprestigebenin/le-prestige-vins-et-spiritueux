@@ -1362,3 +1362,27 @@ footer p{
     cursor:pointer;
     justify-self:center;
 }
+
+.photo-panier{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+}
+
+.infos-panier{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
