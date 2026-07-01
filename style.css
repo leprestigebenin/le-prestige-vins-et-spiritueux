@@ -1776,3 +1776,46 @@ footer{
     width:100%;
 
 }
+
+.carte-avis{
+
+    max-width:700px;
+    margin:40px auto;
+
+    background:#1b1b1b;
+
+    border:1px solid #333;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+}
+
+.icone-avis{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.carte-avis h3{
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+}
+
+.carte-avis p{
+
+    color:#ddd;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
