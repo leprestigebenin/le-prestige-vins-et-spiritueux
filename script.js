@@ -647,10 +647,18 @@ window.addEventListener("scroll",function(){
 
 });
 
-function ouvrirPanier() {
+function ouvrirPanier(){
+
     document.getElementById("panier-lateral").classList.add("ouvert");
+
+    document.getElementById("overlay-panier").style.display="block";
+
 }
 
-function fermerPanier() {
+function fermerPanier(){
+
     document.getElementById("panier-lateral").classList.remove("ouvert");
+
+    document.getElementById("overlay-panier").style.display="none";
+
 }
