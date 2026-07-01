@@ -12,17 +12,20 @@ let total = 0;
 
 function ajouterPanier(nom, prix){
 
+let produitExiste = panier.find(p => p.nom === nom);
+
+if (produitExiste) {
+    produitExiste.quantite++;
+} else {
     panier.push({
-    nom,
-    prix,
-    quantite: 1
-});
-
-    afficherPanier();
-
-    afficherNotification(nom + " ajouté au panier");
-
+        nom,
+        prix,
+        quantite: 1
+    });
 }
+
+afficherPanier();
+afficherNotification(nom + " ajouté au panier");
 // =====================================================
 // Afficher le panier
 // =====================================================
