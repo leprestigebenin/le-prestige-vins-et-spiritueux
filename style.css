@@ -1684,3 +1684,17 @@ footer{
 #panier-lateral.ouvert{
     right: 0;
 }
+
+.fermer-panier{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#b00000;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
