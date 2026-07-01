@@ -612,6 +612,7 @@ document.addEventListener("DOMContentLoaded",function(){
 // =====================================
 
 function toggleMenu() {
-    alert("Le bouton fonctionne !");
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
 }
 
