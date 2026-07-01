@@ -612,9 +612,6 @@ document.addEventListener("DOMContentLoaded",function(){
 // =====================================
 
 function toggleMenu() {
-
-    const menu = document.getElementById("menu");
-
-    menu.classList.toggle("active");
-
+    document.getElementById("menu").classList.toggle("active");
 }
+
