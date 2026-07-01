@@ -5,6 +5,21 @@
 
 let panier = JSON.parse(localStorage.getItem("panier")) || [];
 let total = 0;
+panier.forEach(produit=>{
+
+    if(!produit.quantite){
+
+        produit.quantite = 1;
+
+    }
+
+    if(!produit.image){
+
+        produit.image = "logo.png";
+
+    }
+
+});
 
 // =====================================================
 // Ajouter un produit
@@ -12,22 +27,24 @@ let total = 0;
 
 function ajouterPanier(nom, prix, image){
 
-    const existe = panier.find(produit => produit.nom === nom);
+    const produitExiste = panier.find(produit => produit.nom === nom);
 
-    if(existe){
+    if(produitExiste){
 
-        existe.quantite++;
+        produitExiste.quantite++;
 
     }else{
 
- panier.push({
-    nom,
-    prix,
-    image,
-    quantite: 1
- });
+        panier.push({
+            nom: nom,
+            prix: prix,
+            image: image,
+            quantite: 1
+        });
 
     }
+
+    localStorage.setItem("panier", JSON.stringify(panier));
 
     afficherPanier();
 
