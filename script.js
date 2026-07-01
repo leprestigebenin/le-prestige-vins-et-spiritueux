@@ -606,3 +606,15 @@ document.addEventListener("DOMContentLoaded",function(){
     }
 
 });
+
+// =====================================
+// MENU HAMBURGER
+// =====================================
+
+function toggleMenu() {
+
+    const menu = document.getElementById("menu");
+
+    menu.classList.toggle("active");
+
+}
