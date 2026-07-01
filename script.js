@@ -25,8 +25,8 @@ panier.forEach(produit=>{
 // Ajouter un produit
 // =====================================================
 
-function ajouterPanier(nom, prix, image){
-
+function ajouterPanier(nom, prix, image, bouton){
+    
     const produitExiste = panier.find(produit => produit.nom === nom);
 
     if(produitExiste){
@@ -49,6 +49,8 @@ function ajouterPanier(nom, prix, image){
     afficherPanier();
 
     afficherNotification(nom + " ajouté au panier");
+    
+    animationPanier(image);
 
 }
 // =====================================================
@@ -538,7 +540,50 @@ function majSuggestion(items){
     }
 
 }  
+// =====================================================
+// ANIMATION VERS LE PANIER V3.2
+// =====================================================
 
+animationPanier(bouton,image);
+
+    const photo = bouton.closest(".carte").querySelector("img");
+
+    const panier = document.getElementById("nombre-panier");
+
+    if(!photo || !panier) return;
+
+    const copie = photo.cloneNode(true);
+
+    const depart = photo.getBoundingClientRect();
+
+    const arrivee = panier.getBoundingClientRect();
+
+    copie.classList.add("image-volante");
+
+    copie.style.left = depart.left + "px";
+    copie.style.top = depart.top + "px";
+    copie.style.width = depart.width + "px";
+    copie.style.height = depart.height + "px";
+
+    document.body.appendChild(copie);
+
+    requestAnimationFrame(()=>{
+
+        copie.style.left = arrivee.left + "px";
+        copie.style.top = arrivee.top + "px";
+        copie.style.width = "20px";
+        copie.style.height = "20px";
+        copie.style.opacity = "0";
+
+    });
+
+    setTimeout(()=>{
+
+        copie.remove();
+
+    },800);
+
+}
 // =====================================================
 // NOTIFICATION PANIER
 // =====================================================
