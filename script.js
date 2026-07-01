@@ -62,7 +62,7 @@ ${produit.prix.toLocaleString()} FCFA
 <button class="quantite-btn" onclick="augmenterQuantite(${index})">+</button>
             </div>
 
-            <button onclick="supprimerProduit(${index})">
+<button class="btn-supprimer" onclick="supprimerProduit(${index})">
 
                 ❌
 
