@@ -1643,8 +1643,6 @@ footer{
     display:flex;
 }
 
-}
-
 /* Animation du menu */
 
 #menu{
@@ -1868,26 +1866,12 @@ footer{
 
 @media (min-width:769px){
 
-    nav{
-        width:320px;
-        max-width:320px;
-        left:50%;
-        transform:translateX(-50%);
-    }
-
-}
-
-/* ===== Version PC ===== */
-
-@media (min-width:769px){
-
     /* Masquer le bouton hamburger */
     .menu-toggle{
         display:none !important;
     }
 
-    /* Afficher le menu horizontal */
-    #menu{
+     #menu{
         display:flex !important;
         flex-direction:row;
         justify-content:center;
@@ -1907,12 +1891,18 @@ footer{
     }
 
     nav{
-        width:100%;
-        max-width:none;
-        padding:10px 25px;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
+    position:fixed;
+    top:0;
+    left:0;
 
+    width:100%;
+
+    padding:15px 30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.92);
 }
+    
