@@ -1878,24 +1878,41 @@ footer{
 }
 
 /* ===== Version PC ===== */
+
 @media (min-width:769px){
 
-    nav{
-        width:auto !important;
-        max-width:none !important;
-        padding:0 20px !important;
+    /* Masquer le bouton hamburger */
+    .menu-toggle{
+        display:none !important;
     }
 
+    /* Afficher le menu horizontal */
     #menu{
-        width:auto !important;
         display:flex !important;
-        justify-content:flex-end;
-        gap:12px;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        gap:20px;
+
+        width:auto !important;
+        background:transparent;
+        position:static;
+        padding:0;
+        margin:0;
     }
 
     #menu li{
-        width:auto !important;
+        width:auto;
+        border:none;
+    }
+
+    nav{
+        width:100%;
+        max-width:none;
+        padding:10px 25px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
 
 }
-
