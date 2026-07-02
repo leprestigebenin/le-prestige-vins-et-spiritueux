@@ -284,8 +284,9 @@ section{
 
 .carte{
 
-    background:#fff;
+    position:relative;
 
+    background:#fff;
     color:#222;
 
     border-radius:18px;
@@ -1644,17 +1645,6 @@ footer{
         opacity:1;
         transform:translateY(0);
     }
-}
-
-/* Animation des cartes */
-
-.carte{
-    transition:0.3s;
-}
-
-.carte:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,.25);
 }
 
 #retour-haut{
