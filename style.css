@@ -1563,47 +1563,32 @@ footer{
 /* MENU HAMBURGER */
 /* ========================================= */
 
-.menu-toggle{
-    display:none;
-    background:none;
-    border:none;
-    color:#d4af37;
-    font-size:40px;
-    cursor:pointer;
-}
-
-/* Version mobile */
-
 @media (max-width:768px){
 
-   nav{
-    position:fixed;
-    top:15px;
-    left:15px;
-    right:15px;
+    nav{
+        position:fixed;
+        top:15px;
+        left:15px;
+        right:15px;
 
-    width:auto;
-    max-width:none;
+        background:#111;
+        border-radius:18px;
+        padding:15px;
 
-    background:#111;
-    border-radius:18px;
+        box-shadow:0 10px 25px rgba(0,0,0,.35);
+        z-index:1000;
+    }
 
-    padding:15px;
-
-    z-index:1000;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.35);
-}
     header{
-    padding-top:120px;
-}
+        padding-top:120px;
+    }
 
     .menu-toggle{
-    width:60px;
-    height:60px;
-    margin:0 auto;
-    display:block;
-}
+        display:block;
+        width:60px;
+        height:60px;
+        margin:0 auto;
+    }
 
     #menu{
         display:none;
@@ -1624,7 +1609,7 @@ footer{
         width:100%;
         padding:18px;
         text-align:center;
-        color:white;
+        color:#fff;
         text-decoration:none;
         border-bottom:1px solid #333;
         font-size:20px;
@@ -1634,15 +1619,10 @@ footer{
         border-bottom:none;
     }
 
-}
     #menu a:hover{
         background:#222;
     }
-
-    #menu.actif{
-    display:flex;
 }
-
 /* Animation du menu */
 
 #menu{
@@ -1866,43 +1846,24 @@ footer{
 
 @media (min-width:769px){
 
-    /* Masquer le bouton hamburger */
     .menu-toggle{
-        display:none !important;
+        display:none;
     }
 
-     #menu{
-        display:flex !important;
+    #menu{
+        display:flex;
         flex-direction:row;
         justify-content:center;
         align-items:center;
-        gap:20px;
-
-        width:auto !important;
-        background:transparent;
-        position:static;
-        padding:0;
-        margin:0;
-    }
-
-    #menu li{
-        width:auto;
-        border:none;
+        gap:25px;
     }
 
     nav{
-    position:fixed;
-    top:0;
-    left:0;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        padding:18px 30px;
+    }
 
-    width:100%;
-
-    padding:15px 30px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    background:rgba(0,0,0,.92);
 }
-    
