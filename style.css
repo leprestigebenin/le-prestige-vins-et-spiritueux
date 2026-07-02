@@ -1865,3 +1865,15 @@ footer{
 
     min-height:180px !important;
 }
+
+.titre-panier{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.icone-panier{
+    width:34px;
+    height:34px;
+}
