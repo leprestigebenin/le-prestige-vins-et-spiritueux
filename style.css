@@ -49,21 +49,14 @@ body{
 
 .logo{
 
-    width:160px;
-
+   .logo{
+    width:220px;
+    max-width:90%;
     height:auto;
-
-    margin-bottom:20px;
-
-    position:relative;
-
-    left:-25px;
-
-    filter:drop-shadow(0 4px 12px rgba(0,0,0,.35));
-
-    transition:.3s;
-
+    display:block;
+    margin:0 auto 25px;
 }
+
 h1{
     font-size:60px;
     color:#fff;
