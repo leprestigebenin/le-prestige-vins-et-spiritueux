@@ -1843,3 +1843,25 @@ footer{
     margin-bottom:25px;
 
 }
+
+#temoignages input,
+#temoignages textarea{
+
+    width:100% !important;
+    max-width:700px !important;
+
+    display:block;
+
+    margin:15px auto;
+
+    padding:18px;
+
+    font-size:18px;
+
+    box-sizing:border-box;
+}
+
+#temoignages textarea{
+
+    min-height:180px !important;
+}
