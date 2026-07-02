@@ -1249,55 +1249,6 @@ footer p{
 }
 
 .quantite-btn{
-    width:32px;
-    height:32px;
-    border:none;
-    border-radius:8px;
-    background:#8B0000;
-    color:white;
-    font-size:20px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-.quantite{
-    display:inline-block;
-    min-width:30px;
-    text-align:center;
-    font-weight:bold;
-    font-size:18px;
-    margin:0 10px;
-}
-.btn-supprimer{
-    width:40px;
-    height:40px;
-    border:none;
-    border-radius:8px;
-    background:#C62828;
-    color:white;
-    cursor:pointer;
-}
-
-.ligne-panier{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:15px;
-    padding:15px;
-    border-bottom:1px solid #ddd;
-}
-
-.infos-panier{
-    flex:1;
-}
-
-.quantite-zone{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.quantite-btn{
     width:35px;
     height:35px;
     border:none;
@@ -1314,19 +1265,9 @@ footer p{
     font-weight:bold;
 }
 
-.btn-supprimer{
-    width:40px;
-    height:40px;
-    border:none;
-    border-radius:8px;
-    background:#C62828;
-    color:white;
-    cursor:pointer;
-}
-
 .ligne-panier{
     display:grid;
-    grid-template-columns: 1fr 160px 60px;
+    grid-template-columns:1fr 160px 60px;
     align-items:center;
     gap:20px;
     padding:15px 0;
