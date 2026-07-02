@@ -1863,3 +1863,16 @@ footer{
     align-items:center;
     margin-bottom:25px;
 }
+
+/* ===== Version PC ===== */
+
+@media (min-width:769px){
+
+    nav{
+        width:420px;
+        max-width:420px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+}
