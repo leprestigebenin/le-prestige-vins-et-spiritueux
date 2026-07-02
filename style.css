@@ -1876,3 +1876,26 @@ footer{
     }
 
 }
+
+/* ===== Version PC ===== */
+@media (min-width:769px){
+
+    nav{
+        width:auto !important;
+        max-width:none !important;
+        padding:0 20px !important;
+    }
+
+    #menu{
+        width:auto !important;
+        display:flex !important;
+        justify-content:flex-end;
+        gap:12px;
+    }
+
+    #menu li{
+        width:auto !important;
+    }
+
+}
+
