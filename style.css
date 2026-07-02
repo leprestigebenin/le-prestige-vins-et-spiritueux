@@ -1531,7 +1531,35 @@ footer{
 
 .formulaire-avis input,
 .formulaire-avis textarea{
-    font-size:16px;
+
+    width:100%;
+
+    max-width:600px;
+
+    display:block;
+
+    margin:15px auto;
+
+    padding:18px;
+
+    font-size:18px;
+
+    border:2px solid #d4af37;
+
+    border-radius:12px;
+
+    background:#222;
+
+    color:#fff;
+
+    box-sizing:border-box;
+    
+    min-height:180px;
+
+    resize:vertical;
+
+}
+
 }
 
 .btn-avis{
